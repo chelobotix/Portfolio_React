@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo_barrenechea.png";
+import logo from "@/assets/images/logo_barrenechea.png";
 import { useState, useEffect } from "react";
 import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
 
