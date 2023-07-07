@@ -4,7 +4,6 @@ const Home = () => {
   return (
     <>
       <Header />
-      <h1 className="text-white text-7xl">TEST!!</h1>
     </>
   );
 };
