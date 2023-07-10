@@ -1,3 +1,7 @@
+.heroText {
+  animation: lights 5s 750ms linear infinite;
+}
+
 @keyframes lights {
   0% {
     color: hsl(230, 40%, 80%);
@@ -30,6 +34,62 @@
   }
 }
 
-.heroText {
-  animation: lights 5s 750ms linear infinite;
+.saturn {
+  position: absolute;
+  left: 75%;
+  top: 20%;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.gravity {
+  -webkit-animation: gravity 3s infinite alternate;
+  animation: gravity 3s ease infinite alternate;
+}
+
+@-webkit-keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes gravity {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.comet {
+  position: fixed;
+  left: 95%;
+  top: 99px;
+}
+
+.cometFly {
+  -webkit-animation: comet-fly 10s linear;
+  animation: comet-fly 10s linear;
+}
+
+@-webkit-keyframes comet-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-550px, -150px);
+  }
+}
+@keyframes comet-fly {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-550px, -250px);
+  }
 }

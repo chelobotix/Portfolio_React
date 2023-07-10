@@ -12,6 +12,7 @@ module.exports = withMT({
       "dark-purple": "#3a3153",
       "dark-blue": "#151666",
       "ligth-blue": "#b2beff",
+      "letter-blue": "#b1bcfe",
     },
   },
   plugins: [],
