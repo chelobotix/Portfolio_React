@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Monument-regular;
+  src: url("../assets/fonts/Monument-Regular.ttf") format("truetype");
+}
