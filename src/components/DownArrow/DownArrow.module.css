@@ -1,0 +1,21 @@
+.animation {
+  -webkit-animation: updown 1s infinite alternate;
+  animation: updown 1s ease infinite alternate;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

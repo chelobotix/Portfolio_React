@@ -30,12 +30,7 @@ const Nav = () => {
   );
 
   return (
-    <Navbar
-      shadow={false}
-      blurred={false}
-      fullWidth={true}
-      className="fixed py-2 px-4 lg:px-8 lg:py-4 bg-dark-blue border-dark-blue z-0"
-    >
+    <Navbar shadow={false} blurred={false} fullWidth={true} className="fixed p-1 lg:px-8 bg-dark-blue border-dark-blue z-0">
       <div className="flex items-center justify-between text-white ">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
           <img className="w-36 md:w-44" src={logo} alt="" />
