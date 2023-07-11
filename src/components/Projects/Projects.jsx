@@ -1,6 +1,8 @@
 import Project from "../Project/Project";
 import project1 from "@/assets/images/reggae_concert.jpg";
 import project2 from "@/assets/images/venom_precision.jpg";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
 
 const Projects = () => {
   const projectImages = [
@@ -10,6 +12,8 @@ const Projects = () => {
       description:
         "Venom Precision Paintball Website: Your go-to source for all things paintball! Explore our extensive collection of articles.",
       techs: ["HTML5", "CSS3", "JavaScript"],
+      icon: <FaReact />,
+      iconStyle: { color: "orange", size: "2rem" },
     },
     project2,
   ];
