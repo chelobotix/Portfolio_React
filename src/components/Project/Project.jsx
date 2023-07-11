@@ -1,8 +1,10 @@
 import { IconContext } from "react-icons";
+import { v4 as uuidv4 } from "uuid";
+import Button from "../Button/Button";
 import style from "./Project.module.css";
 
 const Project = (props) => {
-  const { title, image, description, techs, icon, iconStyle } = props.details;
+  const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
   console.log(icon);
   return (
     <article className="w-72 min-w-72 bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center mx-6 rounded-2xl border border-letter-blue">
@@ -15,13 +17,29 @@ const Project = (props) => {
       </div>
       <img className="w-64 h-56 rounded-2xl mt-9 border-2 border-letter-blue" src={image} alt="project_iamge" />
 
-      <h3 className="text-2xl font-semibold text-white mt-3">{title}</h3>
-      <p className="text-sm text-letter-blue mt-2 text-center">{description}</p>
-      <ul>
+      <h3 className="text-3xl font-semibold text-white mt-3">{title}</h3>
+      <ul className="flex">
         {techs.map((tech) => (
-          <li>{tech}</li>
+          <IconContext.Provider value={techsStyle}>
+            <li key={uuidv4()}>{tech}</li>
+          </IconContext.Provider>
         ))}
       </ul>
+      <p className="text-sm text-letter-blue mt-2 text-center">{description}</p>
+      <div className="flex gap-2 mt-4 mb-6">
+        <Button
+          name="Brief Scan"
+          style={
+            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue rounded-3xl text-letter-blue hover:bg-letter-blue hover:border-white hover:text-dark-blue"
+          }
+        />
+        <Button
+          name="Live Demo"
+          style={
+            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-white "
+          }
+        />
+      </div>
     </article>
   );
 };
