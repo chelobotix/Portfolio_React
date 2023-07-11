@@ -7,11 +7,13 @@ const Project = (props) => {
   const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
   console.log(icon);
   return (
-    <article className="w-72 min-w-72 bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center mx-6 rounded-2xl border border-letter-blue">
+    <article
+      className={`${style.projectArticle} bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center  rounded-2xl border border-letter-blue`}
+    >
       <div className="relative">
         <div className={`${style.icon}`}>
           <IconContext.Provider value={iconStyle}>
-            <div className={`bg-dark-purple p-4 rounded-full border-t-2 border-l-2`}>{icon}</div>
+            <div className={`bg-dark-purple p-4 rounded-full border-letter-blue border-t-2 border-l-2`}>{icon}</div>
           </IconContext.Provider>
         </div>
       </div>
@@ -20,8 +22,10 @@ const Project = (props) => {
       <h3 className="text-3xl font-semibold text-white mt-3">{title}</h3>
       <ul className="flex">
         {techs.map((tech) => (
-          <IconContext.Provider value={techsStyle}>
-            <li key={uuidv4()}>{tech}</li>
+          <IconContext.Provider key={uuidv4()} value={techsStyle}>
+            <li className="m-1" key={uuidv4()}>
+              {tech}
+            </li>
           </IconContext.Provider>
         ))}
       </ul>

@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-around bg-cover bg-center h-screen"
+        className="flex flex-col items-center justify-around bg-cover bg-center w-screen h-screen"
         style={{ backgroundImage: `url(${bg_img})` }}
       >
         <img className={`w-16 lg:w-28 2xl:w-44 ${style.saturn} ${style.gravity} `} src={saturn} alt="" />
