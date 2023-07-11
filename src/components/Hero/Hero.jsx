@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Contact from "../Contact/Contact";
+import DownArrow from "../DownArrow/DownArrow";
 import bg_img from "@/assets/images/header_bg.jpg";
 import saturn from "@/assets/images/saturn.png";
 import comet from "@/assets/images/comet.png";
@@ -26,7 +27,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col ali justify-evenly items-center bg-cover bg-center h-screen"
+        className="flex flex-col items-center justify-around bg-cover bg-center w-screen h-screen"
         style={{ backgroundImage: `url(${bg_img})` }}
       >
         <img className={`w-16 lg:w-28 2xl:w-44 ${style.saturn} ${style.gravity} `} src={saturn} alt="" />
@@ -38,7 +39,7 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <p className={`text-white text-l md:text-xl lg:text-2xl italic font-monument text-center p-7 ${style.heroText}`}>
+        <p className={`text-white text-l md:text-xl lg:text-2xl italic font-monument text-center mt-20 ${style.heroText}`}>
           Our Minds are more than just 3 Dimensions...
         </p>
         <img className="w-28 h-auto pb-24 lg:w-40 lg:pb-36 2xl:w-48" src={tesseract} alt="Tesseract" />
@@ -49,6 +50,7 @@ const Hero = () => {
             <span className="text-3xl md:tracking-normal 2xl:text-5xl">Full Stack Software Engineer</span>
           </h1>
           <Contact />
+          <DownArrow color={"#ba87CA"} size={"2rem"} />
         </div>
       </div>
     </>
