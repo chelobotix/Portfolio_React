@@ -8,7 +8,7 @@ const Project = (props) => {
   console.log(icon);
   return (
     <article
-      className={`${style.projectArticle} bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center  rounded-2xl border border-letter-blue`}
+      className={`${style.projectArticle} bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center  rounded-2xl border border-letter-blue hover:ring-4 ring-indigo-300`}
     >
       <div className="relative">
         <div className={`${style.icon}`}>
@@ -17,7 +17,11 @@ const Project = (props) => {
           </IconContext.Provider>
         </div>
       </div>
-      <img className="w-64 h-56 rounded-2xl mt-9 border-2 border-letter-blue" src={image} alt="project_iamge" />
+      <img
+        className="w-72 h-48 md:w-80 md:h-56 2xl:w-80 2xl:h-60 rounded-2xl mt-9 border-2 border-letter-blue"
+        src={image}
+        alt="project_iamge"
+      />
 
       <h3 className="text-3xl font-semibold text-white mt-3">{title}</h3>
       <ul className="flex">
@@ -29,7 +33,7 @@ const Project = (props) => {
           </IconContext.Provider>
         ))}
       </ul>
-      <p className="text-sm text-letter-blue mt-2 text-center">{description}</p>
+      <p className="text-sm text-letter-blue mt-2 px-6 text-center">{description}</p>
       <div className="flex gap-2 mt-4 mb-6">
         <Button
           name="Brief Scan"
