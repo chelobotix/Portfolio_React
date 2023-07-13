@@ -6,6 +6,7 @@ import saturn from "@/assets/images/saturn.png";
 import comet from "@/assets/images/comet.png";
 import tesseract from "@/assets/images/Tesseract.gif";
 import style from "./Hero.module.css";
+import "@/assets/style/animateText.css";
 const Hero = () => {
   let cometAnimationDuration = {};
   let cometCoordiante = { from: {}, to: {} };
@@ -39,7 +40,7 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <p className={`text-white text-l md:text-xl lg:text-2xl italic font-monument text-center mt-20 ${style.heroText}`}>
+        <p className="text-white text-l md:text-xl lg:text-2xl italic font-monument text-center mt-20 animateText">
           Our Minds are more than just 3 Dimensions...
         </p>
         <img className="w-28 h-auto pb-24 lg:w-40 lg:pb-36 2xl:w-48" src={tesseract} alt="Tesseract" />
