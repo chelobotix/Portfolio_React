@@ -4,7 +4,7 @@ import project3 from "@/assets/images/roman.jpg";
 import project4 from "@/assets/images/awesome_books.jpg";
 import project5 from "@/assets/images/todolist.jpg";
 import project6 from "@/assets/images/leaderboard.jpg";
-import project7 from "@/assets/images/bookstore.jpg";
+import project7 from "@/assets/images/bookStore.jpg";
 import project8 from "@/assets/images/spacetravelers.jpg";
 import project9 from "@/assets/images/retrowatchers.jpg";
 import project10 from "@/assets/images/schoollibrary.jpg";
