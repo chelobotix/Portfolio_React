@@ -7,9 +7,7 @@ const Project = (props) => {
   const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
   console.log(icon);
   return (
-    <article
-      className={`${style.projectArticle} bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center  rounded-2xl border border-letter-blue hover:ring-4 ring-indigo-300`}
-    >
+    <article className={`${style.projectArticle} articleProject`}>
       <div className="relative">
         <div className={`${style.icon}`}>
           <IconContext.Provider value={iconStyle}>

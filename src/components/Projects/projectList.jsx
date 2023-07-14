@@ -71,7 +71,7 @@ const projectList = [
     title: "Leader Board",
     image: project6,
     description:
-      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Add scores, witness the rankings, and embrace the competitive spirit of Middle-earth, all in one sleek interface.",
+      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Embrace the competitive spirit of Middle-earth.",
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />, <SiWebpack />, <TbApi />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiWebpack />,
@@ -122,7 +122,7 @@ const projectList = [
     techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <DiRuby />,
-    iconStyle: { color: "C6322C", size: "1.8rem" },
+    iconStyle: { color: "C6322C", size: "2rem" },
     liveDemo: "https://github.com/chelobotix/school-library",
     gitHub: "https://github.com/chelobotix/school-library",
   },

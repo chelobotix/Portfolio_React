@@ -19,6 +19,8 @@ function Icon({ id, open }) {
   );
 }
 
+const headerStyle = open === 1 ? "text-white hover:text-letter-blue" : "text-letter-blue hover:text-white";
+
 const TechAccordion = () => {
   const [open, setOpen] = useState(0);
 
@@ -34,7 +36,7 @@ const TechAccordion = () => {
   return (
     <Fragment>
       <Accordion open={open === 1} icon={<Icon id={1} open={open} />} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(1)} className={open === 1 ? "text-white" : "text-letter-blue"}>
+        <AccordionHeader onClick={() => handleOpen(1)} className={headerStyle}>
           Languages
         </AccordionHeader>
         <AccordionBody>
@@ -55,7 +57,7 @@ const TechAccordion = () => {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} icon={<Icon id={2} open={open} />} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(2)} className={open === 2 ? "text-white" : "text-letter-blue"}>
+        <AccordionHeader onClick={() => handleOpen(2)} className={headerStyle}>
           Frameworks & Libraries
         </AccordionHeader>
         <AccordionBody>
@@ -76,7 +78,7 @@ const TechAccordion = () => {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} icon={<Icon id={3} open={open} />} animate={customAnimation}>
-        <AccordionHeader onClick={() => handleOpen(3)} className={open ? "text-white" : "text-letter-blue"}>
+        <AccordionHeader onClick={() => handleOpen(3)} className={headerStyle}>
           Skills
         </AccordionHeader>
         <AccordionBody>
