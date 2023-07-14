@@ -6,3 +6,7 @@
   font-family: Monument-regular;
   src: url("../assets/fonts/Monument-Regular.ttf") format("truetype");
 }
+
+.articleProject {
+  @apply bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center justify-between rounded-2xl border border-letter-blue hover:ring-4 ring-indigo-300 hover:scale-105 duration-300;
+}

@@ -33,7 +33,11 @@ const Nav = () => {
     <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-0">
       <div className="flex items-center justify-between text-white ">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
-          <img className="w-36 md:w-44" src={logo} alt="" />
+          <img
+            className="transition ease-in-out duration-500 hover:blur-[1.1px] hover:animate-pulse w-36 md:w-44"
+            src={logo}
+            alt=""
+          />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <IconButton

@@ -4,7 +4,7 @@ import project3 from "@/assets/images/roman.jpg";
 import project4 from "@/assets/images/awesome_books.jpg";
 import project5 from "@/assets/images/todolist.jpg";
 import project6 from "@/assets/images/leaderboard.jpg";
-import project7 from "@/assets/images/bookstore.jpg";
+import project7 from "@/assets/images/bookStore.jpg";
 import project8 from "@/assets/images/spacetravelers.jpg";
 import project9 from "@/assets/images/retrowatchers.jpg";
 import project10 from "@/assets/images/schoollibrary.jpg";
@@ -23,7 +23,7 @@ const projectList = [
     techs: [<FaReact />, <SiRubyonrails />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiRubyonrails />,
-    iconStyle: { color: "red", size: "2rem" },
+    iconStyle: { color: "C6322C", size: "2rem" },
   },
   {
     title: "Roman Emperors",
@@ -43,7 +43,7 @@ const projectList = [
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
-    iconStyle: { color: "orange", size: "2rem" },
+    iconStyle: { color: "EFD81D", size: "2rem" },
   },
   {
     title: "Awesome Books",
@@ -53,7 +53,7 @@ const projectList = [
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
-    iconStyle: { color: "orange", size: "2rem" },
+    iconStyle: { color: "EFD81D", size: "2rem" },
   },
   {
     title: "To Do List",
@@ -71,7 +71,7 @@ const projectList = [
     title: "Leader Board",
     image: project6,
     description:
-      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Add scores, witness the rankings, and embrace the competitive spirit of Middle-earth, all in one sleek interface.",
+      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Embrace the competitive spirit of Middle-earth.",
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />, <SiWebpack />, <TbApi />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiWebpack />,
@@ -110,7 +110,7 @@ const projectList = [
     techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
-    iconStyle: { color: "orange", size: "2rem" },
+    iconStyle: { color: "EFD81D", size: "2rem" },
     liveDemo: "https://thunderous-dasik-81b884.netlify.app/",
     gitHub: "https://github.com/chelobotix/Retro-Watchers-Capstone",
   },
@@ -122,7 +122,7 @@ const projectList = [
     techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <DiRuby />,
-    iconStyle: { color: "red", size: "1.8rem" },
+    iconStyle: { color: "C6322C", size: "2rem" },
     liveDemo: "https://github.com/chelobotix/school-library",
     gitHub: "https://github.com/chelobotix/school-library",
   },
