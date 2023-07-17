@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { IconContext } from "react-icons";
 import { v4 as uuidv4 } from "uuid";
 import Button from "../Button/Button";
 import style from "./Project.module.css";
 
 const Project = (props) => {
-  const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
+  const { title, image, description, techs, techsStyle, icon, iconStyle, liveDemo } = props.details;
+  const { visible, setVisible } = props;
 
   const sliceDescription = (string) => {
     if (string.length <= 99) {
@@ -51,12 +53,17 @@ const Project = (props) => {
           style={
             "px-4 py-1 text-sm font-semibold border-2 border-letter-blue rounded-3xl text-letter-blue hover:bg-letter-blue hover:border-white hover:text-dark-blue"
           }
+          visible={visible}
+          setVisible={setVisible}
         />
         <Button
           name="Live Demo"
           style={
             "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-white "
           }
+          liveDemo={liveDemo}
+          visible={visible}
+          setVisible={setVisible}
         />
       </div>
     </article>

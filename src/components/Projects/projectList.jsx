@@ -24,6 +24,8 @@ const projectList = [
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiRubyonrails />,
     iconStyle: { color: "C6322C", size: "2rem" },
+    liveDemo: "https://velvety-genie-9ab88d.netlify.app/",
+    gitHub: "https://github.com/chelobotix/VenomPrecision-back-end",
   },
   {
     title: "Roman Emperors",
@@ -34,6 +36,8 @@ const projectList = [
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <FaReact />,
     iconStyle: { color: "5ED3F3", size: "2rem" },
+    liveDemo: "https://illustrious-rolypoly-9106b9.netlify.app/",
+    gitHub: "https://github.com/chelobotix/To-Do-List-Barrenechea",
   },
   {
     title: "Reggae Concert",
@@ -44,6 +48,8 @@ const projectList = [
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
     iconStyle: { color: "EFD81D", size: "2rem" },
+    liveDemo: "https://chelobotix.github.io/Capstone-project-Protoje-concert/",
+    gitHub: "https://github.com/chelobotix/Capstone-project-Protoje-concert",
   },
   {
     title: "Awesome Books",
@@ -54,6 +60,8 @@ const projectList = [
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
     iconStyle: { color: "EFD81D", size: "2rem" },
+    liveDemo: "https://chelobotix.github.io/Awesome_Book/",
+    gitHub: "https://github.com/chelobotix/Awesome_Book",
   },
   {
     title: "To Do List",
@@ -76,7 +84,7 @@ const projectList = [
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiWebpack />,
     iconStyle: { color: "75AFCC", size: "2rem" },
-    liveDemo: "https://chelobotix.github.io/Leaderboard-Chelobotix/dist/",
+    liveDemo: "https://whimsical-peony-71ff5a.netlify.app/",
     gitHub: "https://github.com/chelobotix/Leaderboard-Chelobotix",
   },
   {
