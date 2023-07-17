@@ -5,7 +5,20 @@ import style from "./Project.module.css";
 
 const Project = (props) => {
   const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
-  console.log(icon);
+
+  const sliceDescription = (string) => {
+    if (string.length <= 99) {
+      return string;
+    }
+    let shortDescription = "";
+    for (let i in string) {
+      if (i > 100 && string[i] === " ") {
+        return `${shortDescription}...`;
+      }
+      shortDescription += string[i];
+    }
+  };
+
   return (
     <article className={`${style.projectArticle} articleProject`}>
       <div className="relative">
@@ -31,7 +44,7 @@ const Project = (props) => {
           </IconContext.Provider>
         ))}
       </ul>
-      <p className="text-sm text-letter-blue mt-2 px-6 text-center">{description}</p>
+      <p className="text-sm text-letter-blue mt-2 px-6 text-center">{sliceDescription(description)}</p>
       <div className="flex gap-2 mt-4 mb-6">
         <Button
           name="Brief Scan"

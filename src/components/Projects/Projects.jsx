@@ -9,7 +9,7 @@ const Projects = () => {
       <h2 className="animateText text-4xl font-bold mt-8 mb-14 lg:text-5xl lg:mb-20">Projects</h2>
       <div className="flex justify-center flex-wrap gap-9">
         {projectList.map((project) => {
-          return <Project title details={project} />;
+          return <Project key={uuidv4()} title details={project} />;
         })}
       </div>
     </section>

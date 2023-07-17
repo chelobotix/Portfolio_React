@@ -82,7 +82,8 @@ const projectList = [
   {
     title: "Book Store",
     image: project7,
-    description: "With BookStore you can add your favorite books and track your progress as you read them.",
+    description:
+      "If you love to read with BookStore App you can add your favorite books and track your progress as you read them.",
     techs: [<FaReact />, <SiRedux />, <TbApi />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <FaReact />,
