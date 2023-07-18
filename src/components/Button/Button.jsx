@@ -1,16 +1,20 @@
+import { useRef } from "react";
+
 const Button = (props) => {
-  const { name, style, liveDemo, visible, setVisible } = props;
+  const { name, style, liveDemo, modalConf, setModalConf } = props;
+  const btnRef = useRef(null);
 
   const buttonType = () => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else {
-      setVisible("");
+      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}` });
+      console.log(modalConf);
     }
   };
   return (
     <>
-      <button onClick={buttonType} className={style} type="button">
+      <button ref={btnRef} onClick={buttonType} className={style} type="button">
         {name}
       </button>
     </>

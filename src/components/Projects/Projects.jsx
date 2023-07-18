@@ -6,14 +6,17 @@ import projectList from "./projectList";
 import "@/assets/style/animateText.css";
 
 const Projects = () => {
-  const [visible, setVisible] = useState("hidden");
+  const [modalConf, setModalConf] = useState({
+    visible: "hidden",
+    positionY: 0,
+  });
   return (
     <section className="flex flex-col items-center bg-gradient-to-t from-dark-pink to-dark-blue w-screen p-6">
-      <Modal visible={visible} setvisible={setVisible} />
+      <Modal modalConf={modalConf} setModalConf={setModalConf} />
       <h2 className="animateText text-4xl font-bold mt-8 mb-14 lg:text-5xl lg:mb-20">Projects</h2>
       <div className="flex justify-center flex-wrap gap-9">
         {projectList.map((project) => {
-          return <Project key={uuidv4()} title details={project} visible={visible} setVisible={setVisible} />;
+          return <Project key={uuidv4()} title details={project} modalConf={modalConf} setModalConf={setModalConf} />;
         })}
       </div>
     </section>
