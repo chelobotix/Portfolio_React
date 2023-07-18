@@ -8,7 +8,7 @@ const Button = (props) => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else {
-      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}`, projectId: projectId });
+      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}`, projectId: projectId, scroll: "hidden" });
     }
   };
   return (

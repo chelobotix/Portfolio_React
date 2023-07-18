@@ -6,10 +6,11 @@ import { IconContext } from "react-icons";
 const Modal = (props) => {
   const { modalConf, setModalConf } = props;
   const handleModal = () => {
-    setModalConf({ ...modalConf, visible: "hidden" });
+    setModalConf({ ...modalConf, visible: "hidden", scroll: "auto" });
   };
 
   const project = modalConf.projects.find((project) => project.id === modalConf.projectId);
+  document.body.style.overflow = modalConf.scroll;
 
   return (
     <div
