@@ -21,11 +21,11 @@ const Modal = (props) => {
         <p onClick={handleModal} className="text-dark-blue text-3xl font-bold self-end p-2">
           x
         </p>
-        <h3 className="w-11/12 w-max-11/12 text-center text-3xl font-bold text-letter-blue bg-black opacity-60 px-6 mb-2 rounded-md">
+        <h3 className="w-11/12  w-max-11/12 lg:w-3/5 xl:w-1/2 text-center text-3xl font-bold text-letter-blue bg-black opacity-60 px-6 mb-2 rounded-md">
           {project.title}
         </h3>
         <Carousel
-          className="h-50 w-50 rounded-lg m-2"
+          className="h-50 w-50 md:w-11/12 lg:w-3/5 xl:w-1/2 2xl:w-1/3 rounded-lg m-2"
           prevArrow={({ handlePrev }) => (
             <IconButton
               variant="text"
@@ -58,16 +58,16 @@ const Modal = (props) => {
               key={uuidv4()}
               src={img}
               alt={`image of ${project.title}`}
-              className="h-64 w-full object-cover border-4 border-letter-blue rounded-xl"
+              className="h-64 md:h-auto w-full object-cover border-4 border-letter-blue rounded-xl"
             />
           ))}
         </Carousel>
-        <div className="flex justify-center items-center  w-full h-[150px] m-1  ">
-          <p className="font-bold w-11/12 w-max-11/12  text-center text-letter-blue bg-black opacity-60 rounded-md mx-2 py-4">
+        <div className="flex justify-center items-center w-full h-[130px] md:h-auto">
+          <p className="font-bold w-11/12 w-max-11/12 lg:w-3/5 xl:w-1/2 text-center text-letter-blue bg-black opacity-60 rounded-md mx-2 p-4">
             {project.description}
           </p>
         </div>
-        <div className="m-7">
+        <div className="m-7 md:m-2">
           <a href={project.gitHub}>
             <IconContext.Provider value={{ color: "black", size: "3.5rem" }}>
               <BsGithub />
