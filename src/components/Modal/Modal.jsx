@@ -1,40 +1,78 @@
-import { Carousel } from "@material-tailwind/react";
+import { v4 as uuidv4 } from "uuid";
+import { Carousel, IconButton } from "@material-tailwind/react";
+import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill, BsGithub } from "react-icons/bs";
+import { IconContext } from "react-icons";
 
 const Modal = (props) => {
-  console.log(props);
   const { modalConf, setModalConf } = props;
   const handleModal = () => {
     setModalConf({ ...modalConf, visible: "hidden" });
   };
 
-  console.log(modalConf.positionY);
+  const project = modalConf.projects.find((project) => project.id === modalConf.projectId);
+
   return (
     <div
       className={`${modalConf.visible}  w-screen h-screen  backdrop-blur-sm bg-white/50 absolute z-30`}
       style={{ top: `${modalConf.positionY}px` }}
     >
       <div className="flex flex-col items-center">
-        <p onClick={handleModal} className="text-white text-xl font-bold self-end p-2">
-          X
+        <p onClick={handleModal} className="text-dark-blue text-3xl font-bold self-end p-2">
+          x
         </p>
-        <p className="text-3xl font-bold text-dark-blue">MODAL</p>
-        <Carousel className="h-50 w-50 rounded-lg m-2">
-          <img
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-            alt="image 1"
-            className="h-64 w-50 object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-            alt="image 2"
-            className="h-64 w-50 object-cover"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-            alt="image 3"
-            className="h-64 w-50 object-cover"
-          />
+        <h3 className="w-11/12 w-max-11/12 text-center text-3xl font-bold text-letter-blue bg-black opacity-60 px-6 mb-2 rounded-md">
+          {project.title}
+        </h3>
+        <Carousel
+          className="h-50 w-50 rounded-lg m-2"
+          prevArrow={({ handlePrev }) => (
+            <IconButton
+              variant="text"
+              color="blue"
+              size="md"
+              onClick={handlePrev}
+              className="!absolute top-2/4 -translate-y-2/4 left-4"
+            >
+              <IconContext.Provider value={{ color: "#b1bcfe", size: "2rem" }}>
+                <BsFillArrowLeftCircleFill />
+              </IconContext.Provider>
+            </IconButton>
+          )}
+          nextArrow={({ handleNext }) => (
+            <IconButton
+              variant="text"
+              color="blue"
+              size="md"
+              onClick={handleNext}
+              className="!absolute top-2/4 -translate-y-2/4 !right-4"
+            >
+              <IconContext.Provider value={{ color: "#b1bcfe", size: "2rem" }}>
+                <BsFillArrowRightCircleFill />
+              </IconContext.Provider>
+            </IconButton>
+          )}
+        >
+          {project.images.map((img) => (
+            <img
+              key={uuidv4()}
+              src={img}
+              alt={`image of ${project.title}`}
+              className="h-64 w-full object-cover border-4 border-letter-blue rounded-xl"
+            />
+          ))}
         </Carousel>
+        <div className="flex justify-center items-center  w-full h-[150px] m-1  ">
+          <p className="font-bold w-11/12 w-max-11/12  text-center text-letter-blue bg-black opacity-60 rounded-md mx-2 py-4">
+            {project.description}
+          </p>
+        </div>
+        <div className="m-7">
+          <a href={project.gitHub}>
+            <IconContext.Provider value={{ color: "black", size: "3.5rem" }}>
+              <BsGithub />
+            </IconContext.Provider>
+          </a>
+        </div>
       </div>
     </div>
   );

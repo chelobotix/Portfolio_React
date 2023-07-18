@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import style from "./Project.module.css";
 
 const Project = (props) => {
-  const { title, image, description, techs, techsStyle, icon, iconStyle, liveDemo } = props.details;
+  const { id, title, images, description, techs, techsStyle, icon, iconStyle, liveDemo } = props.details;
   const { modalConf, setModalConf } = props;
 
   const sliceDescription = (string) => {
@@ -32,7 +32,7 @@ const Project = (props) => {
       </div>
       <img
         className="w-72 h-48 md:w-80 md:h-56 2xl:w-80 2xl:h-60 rounded-2xl mt-9 border-2 border-letter-blue"
-        src={image}
+        src={images[0]}
         alt="project_iamge"
       />
 
@@ -55,6 +55,7 @@ const Project = (props) => {
           }
           modalConf={modalConf}
           setModalConf={setModalConf}
+          projectId={id}
         />
         <Button
           name="Live Demo"
@@ -64,6 +65,7 @@ const Project = (props) => {
           liveDemo={liveDemo}
           modalConf={modalConf}
           setModalConf={setModalConf}
+          projectId={id}
         />
       </div>
     </article>

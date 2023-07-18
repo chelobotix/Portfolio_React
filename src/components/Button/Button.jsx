@@ -1,15 +1,14 @@
 import { useRef } from "react";
 
 const Button = (props) => {
-  const { name, style, liveDemo, modalConf, setModalConf } = props;
+  const { name, style, liveDemo, modalConf, setModalConf, projectId } = props;
   const btnRef = useRef(null);
 
   const buttonType = () => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else {
-      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}` });
-      console.log(modalConf);
+      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}`, projectId: projectId });
     }
   };
   return (
