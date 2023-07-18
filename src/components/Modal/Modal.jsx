@@ -14,10 +14,10 @@ const Modal = (props) => {
 
   return (
     <div
-      className={`${modalConf.visible}  w-screen h-screen  backdrop-blur-sm bg-white/50 absolute z-30`}
+      className={`${modalConf.visible} flex items-center  w-screen h-screen  backdrop-blur-sm bg-white/50 absolute z-30`}
       style={{ top: `${modalConf.positionY}px` }}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center border-dark-blue border-2 m-1 rounded-lg">
         <p onClick={handleModal} className="text-dark-blue text-3xl font-bold self-end p-2">
           x
         </p>
