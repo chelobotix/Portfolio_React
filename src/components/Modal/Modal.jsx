@@ -18,7 +18,10 @@ const Modal = (props) => {
       style={{ top: `${modalConf.positionY}px` }}
     >
       <div className="flex flex-col items-center border-dark-blue border-2 m-1 rounded-lg">
-        <p onClick={handleModal} className="text-dark-blue text-3xl font-bold self-end p-2">
+        <p
+          onClick={handleModal}
+          className="text-dark-blue text-3xl font-bold self-end p-2 hover:animate-pulse hover:cursor-pointer"
+        >
           x
         </p>
         <h3 className="w-11/12  w-max-11/12 lg:w-3/5 xl:w-1/2 text-center text-3xl font-bold text-letter-blue bg-black opacity-60 px-6 mb-2 rounded-md">

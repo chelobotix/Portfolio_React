@@ -7,6 +7,10 @@ const Button = (props) => {
   const buttonType = () => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
+    } else if (name === "Get My Resume") {
+      const link = document.createElement("a");
+      link.href = "@/assets/files/Marcelo_Alarcon_Resume.pdf";
+      link.click();
     } else {
       setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}`, projectId: projectId, scroll: "hidden" });
     }

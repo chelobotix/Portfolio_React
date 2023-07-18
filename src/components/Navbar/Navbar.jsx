@@ -12,12 +12,12 @@ const Nav = () => {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
-        <a href="#" className="flex items-center">
+        <a href="#projects" className="flex items-center">
           Projects
         </a>
       </Typography>
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
-        <a href="#" className="flex items-center">
+        <a href="#about" className="flex items-center">
           About
         </a>
       </Typography>
