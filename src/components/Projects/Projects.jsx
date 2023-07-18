@@ -9,6 +9,9 @@ const Projects = () => {
   const [modalConf, setModalConf] = useState({
     visible: "hidden",
     positionY: 0,
+    projects: projectList,
+    projectId: 1,
+    scroll: "auto",
   });
   return (
     <section className="flex flex-col items-center bg-gradient-to-t from-dark-pink to-dark-blue w-screen p-6">
