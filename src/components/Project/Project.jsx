@@ -1,11 +1,26 @@
+import { useState } from "react";
 import { IconContext } from "react-icons";
 import { v4 as uuidv4 } from "uuid";
 import Button from "../Button/Button";
 import style from "./Project.module.css";
 
 const Project = (props) => {
-  const { title, image, description, techs, techsStyle, icon, iconStyle } = props.details;
-  console.log(icon);
+  const { title, image, description, techs, techsStyle, icon, iconStyle, liveDemo } = props.details;
+  const { modalConf, setModalConf } = props;
+
+  const sliceDescription = (string) => {
+    if (string.length <= 99) {
+      return string;
+    }
+    let shortDescription = "";
+    for (let i in string) {
+      if (i > 100 && string[i] === " ") {
+        return `${shortDescription}...`;
+      }
+      shortDescription += string[i];
+    }
+  };
+
   return (
     <article className={`${style.projectArticle} articleProject`}>
       <div className="relative">
@@ -31,19 +46,24 @@ const Project = (props) => {
           </IconContext.Provider>
         ))}
       </ul>
-      <p className="text-sm text-letter-blue mt-2 px-6 text-center">{description}</p>
+      <p className="text-sm text-letter-blue mt-2 px-6 text-center">{sliceDescription(description)}</p>
       <div className="flex gap-2 mt-4 mb-6">
         <Button
           name="Brief Scan"
           style={
             "px-4 py-1 text-sm font-semibold border-2 border-letter-blue rounded-3xl text-letter-blue hover:bg-letter-blue hover:border-white hover:text-dark-blue"
           }
+          modalConf={modalConf}
+          setModalConf={setModalConf}
         />
         <Button
           name="Live Demo"
           style={
             "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-white "
           }
+          liveDemo={liveDemo}
+          modalConf={modalConf}
+          setModalConf={setModalConf}
         />
       </div>
     </article>
