@@ -33,7 +33,7 @@ const Hero = () => {
       >
         <img className={`w-16 lg:w-28 2xl:w-44 ${style.saturn} ${style.gravity} `} src={saturn} alt="" />
         <motion.div
-          className="w-16 w-min-16 fixed z-10 lg:w-24"
+          className="w-16 w-min-16 absolute z-10 lg:w-24"
           initial={cometCoordiante.from}
           animate={cometCoordiante.to}
           transition={cometAnimationDuration}
