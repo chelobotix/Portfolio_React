@@ -2,7 +2,7 @@ import Nav from "../../components/Navbar/Navbar";
 
 const Header = () => {
   return (
-    <header>
+    <header className="fixed w-full">
       <Nav />
     </header>
   );
