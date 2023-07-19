@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 import Contact from "../Contact/Contact";
+import CallAction from "../CallAction/CallAction";
 import DownArrow from "../DownArrow/DownArrow";
 import bg_img from "@/assets/images/header_bg.jpg";
 import saturn from "@/assets/images/saturn.png";
@@ -29,7 +30,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-around bg-cover bg-center w-screen h-screen"
+        className="flex flex-col items-center justify-center bg-cover bg-center w-screen h-screen"
         style={{ backgroundImage: `url(${bg_img})` }}
       >
         <img className={`w-16 lg:w-28 2xl:w-44 ${style.saturn} ${style.gravity} `} src={saturn} alt="" />
@@ -41,22 +42,34 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <p className="text-white text-l md:text-xl lg:text-2xl italic font-monument text-center mt-12 animateText">
-          Our Minds are more than just 3 Dimensions...
-        </p>
-        <img className="w-28 h-auto pb-24 lg:w-40 lg:pb-36 2xl:w-48" src={tesseract} alt="Tesseract" />
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-white font-bold tracking-tighter text-4xl drop-shadow-md font-monument text-center md:text-5xl 2xl:text-6xl">
+        <div className="flex flex-col items-start justify-center mt-8 py-8 md:mt-16">
+          <p className="animateText font-semibold italic pl-6">Welcome to my Portfolio</p>
+          <h1 className="text-white font-bold  text-4xl drop-shadow-md font-monument text-left md:text-5xl md:w-[730px] 2xl:text-6xl leading-9 tracking-wider pl-6">
             I'm Marcelo
             <br />
-            <span className="text-3xl md:tracking-normal 2xl:text-5xl">Full Stack Software Engineer</span>
+            <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack </span>
+            Software Engineer
           </h1>
-          <p className="text-white text-sm font-bold">"Lifelong passion for PCs"</p>
-          <Contact />
-          <Link to="/#contact" className="text-white underline animate-pulse	">
-            Get in Touch Now!
-          </Link>
-          <DownArrow color={"#ba87CA"} size={"2rem"} />
+          <div className="w-[310px] flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
+            <p className="text-white px-1 italic text-sm mb-2">A lifelong passion for PCs fuels me.</p>
+            <p className="text-white pl-1 italic text-sm mb-2">
+              Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
+            </p>
+            <p className="text-white pl-1 italic text-sm mb-1">Open to new opportunities.</p>
+          </div>
+          <CallAction />
+        </div>
+        <div>
+          <img className="w-28 h-auto pb-24 lg:w-40 lg:pb-2 2xl:w-48" src={tesseract} alt="Tesseract" />
+        </div>
+        <div>
+          <p className="text-white text-l md:text-xl lg:text-2xl italic font-monument text-center animateText">
+            Our Minds are more than just 3 Dimensions...
+          </p>
+          <div className="flex flex-col items-center justify-center">
+            <Contact />
+            <DownArrow color={"#ba87CA"} size={"2rem"} />
+          </div>
         </div>
       </div>
     </>
