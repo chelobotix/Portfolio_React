@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { BsGithub } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { v4 as uuidv4 } from "uuid";
 import Button from "../Button/Button";
 import style from "./Project.module.css";
 
 const Project = (props) => {
-  const { id, title, images, description, techs, techsStyle, icon, iconStyle, liveDemo } = props.details;
+  const { id, title, images, description, techs, techsStyle, icon, iconStyle, liveDemo, gitHub } = props.details;
   const { modalConf, setModalConf } = props;
 
   const sliceDescription = (string) => {
@@ -47,7 +48,7 @@ const Project = (props) => {
         ))}
       </ul>
       <p className="text-sm text-letter-blue mt-2 px-6 text-center">{sliceDescription(description)}</p>
-      <div className="flex gap-2 mt-4 mb-6">
+      <div className="flex gap-2 mt-4 ">
         <Button
           name="Brief Scan"
           style={
@@ -69,6 +70,14 @@ const Project = (props) => {
           projectId={id}
           type={"button"}
         />
+      </div>
+      <div className="flex flex-col items-center my-3">
+        <a href={gitHub} target="_blank">
+          <IconContext.Provider value={{ color: "black", size: "2rem" }}>
+            <BsGithub />
+          </IconContext.Provider>
+        </a>
+        <p className="font-semibold text-sm">GitHub Repo</p>
       </div>
     </article>
   );
