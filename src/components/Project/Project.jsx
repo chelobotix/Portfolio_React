@@ -56,6 +56,7 @@ const Project = (props) => {
           modalConf={modalConf}
           setModalConf={setModalConf}
           projectId={id}
+          type={"button"}
         />
         <Button
           name="Live Demo"
@@ -66,6 +67,7 @@ const Project = (props) => {
           modalConf={modalConf}
           setModalConf={setModalConf}
           projectId={id}
+          type={"button"}
         />
       </div>
     </article>

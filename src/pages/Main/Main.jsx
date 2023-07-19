@@ -1,7 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
 import About from "@/components/About/About";
-import Modal from "@/components/Modal/Modal";
+import ContactForm from "@/components/ContactForm/ContactForm";
 
 const Main = () => {
   return (
@@ -9,6 +9,7 @@ const Main = () => {
       <Hero />
       <Projects />
       <About />
+      <ContactForm />
     </main>
   );
 };
