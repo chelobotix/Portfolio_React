@@ -76,7 +76,7 @@ const Modal = (props) => {
           </p>
         </div>
         <div className="m-7 md:m-2">
-          <a href={project.gitHub}>
+          <a href={project.gitHub} target="_blank">
             <IconContext.Provider value={{ color: "black", size: "3.5rem" }}>
               <BsGithub />
             </IconContext.Provider>

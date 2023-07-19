@@ -9,7 +9,7 @@ const Button = (props) => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else if (name === "Get My Resume") {
-      window.open(resumePDF, "_blank");
+      window.open(resumePDF, "_self");
     } else {
       setModalConf({
         ...modalConf,
