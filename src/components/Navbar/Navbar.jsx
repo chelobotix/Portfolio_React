@@ -25,7 +25,7 @@ const Nav = () => {
   );
 
   return (
-    <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-0">
+    <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-50">
       <div className="flex items-center justify-between text-white ">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
           <img
@@ -37,7 +37,7 @@ const Nav = () => {
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden "
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-dark-blue active:bg-transparent lg:hidden "
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -60,7 +60,7 @@ const Nav = () => {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <div className="container mx-auto border-white border-2 rounded-md p-2">{navList}</div>
+        <div className="container mx-auto border-white border-2 rounded-md p-2 bg-dark-blue">{navList}</div>
       </Collapse>
     </Navbar>
   );
