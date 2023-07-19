@@ -1,23 +1,29 @@
-import { useRef } from "react";
+import { useState } from "react";
+import resumePDF from "@/assets/files/Marcelo_Alarcon_Resume.pdf";
 
 const Button = (props) => {
+  const [visible, setVisible] = useState(true);
   const { name, style, liveDemo, modalConf, setModalConf, projectId } = props;
-  const btnRef = useRef(null);
 
   const buttonType = () => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else if (name === "Get My Resume") {
-      const link = document.createElement("a");
-      link.href = "@/assets/files/Marcelo_Alarcon_Resume.pdf";
-      link.click();
+      window.open(resumePDF, "_blank");
     } else {
-      setModalConf({ ...modalConf, visible: "", positionY: `${window.scrollY}`, projectId: projectId, scroll: "hidden" });
+      setModalConf({
+        ...modalConf,
+        visible: "",
+        positionY: `${window.scrollY}`,
+        projectId: projectId,
+        scroll: "hidden",
+        resetCarousel: true,
+      });
     }
   };
   return (
     <>
-      <button ref={btnRef} onClick={buttonType} className={style} type="button">
+      <button onClick={buttonType} className={style} type="button">
         {name}
       </button>
     </>
