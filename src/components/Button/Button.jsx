@@ -3,14 +3,14 @@ import resumePDF from "@/assets/files/Marcelo_Alarcon_Resume.pdf";
 
 const Button = (props) => {
   const [visible, setVisible] = useState(true);
-  const { name, style, liveDemo, modalConf, setModalConf, projectId } = props;
+  const { name, style, liveDemo, modalConf, setModalConf, projectId, type } = props;
 
   const buttonType = () => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else if (name === "Get My Resume") {
-      window.open(resumePDF, "_self");
-    } else {
+      window.open(resumePDF, "_blank");
+    } else if (name === "Brief Scan") {
       setModalConf({
         ...modalConf,
         visible: "",
@@ -23,7 +23,7 @@ const Button = (props) => {
   };
   return (
     <>
-      <button onClick={buttonType} className={style} type="button">
+      <button onClick={buttonType} className={style} type={type}>
         {name}
       </button>
     </>
