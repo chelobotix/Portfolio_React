@@ -4,17 +4,10 @@
 
   <img src="https://user-images.githubusercontent.com/65084923/227249151-5c9fda8d-8ab8-41e4-945d-ebd4b36a5071.jpg" alt="logo" width="350"  height="auto" />
   <br/>
-  <img src="https://user-images.githubusercontent.com/65084923/220199943-ce6cd5da-d55e-4149-a0ac-8c588216d81f.png" alt="logo" width="200"  height="auto" />
-  <br/>
-  <img src="https://user-images.githubusercontent.com/65084923/220200035-01fa5e08-af6a-495b-b597-55157a2b7d95.gif" alt="logo" />
-  <br/>
 
-  <h3><b>Roman Emperors</b></h3>
-  <h3><b>Roman Emperors - React & Redux Microverse Capstone Project Module 3</b></h3>
-  
+  <h3><b>Portfolio Barrenechea</b></h3>
+
   <img src="https://user-images.githubusercontent.com/65084923/227247099-f4c5cecc-9b37-427e-8222-e98b8382823d.jpg" alt="logo" width="200"  height="auto" />
-  <img src="https://user-images.githubusercontent.com/65084923/227248276-278e6f39-dc77-4a65-b1f1-0368ea35a7fb.jpg" alt="logo" width="200"  height="auto" />
-  <img src="https://user-images.githubusercontent.com/65084923/227248445-b3c77feb-9ffa-4362-8dd1-35a6894dfecb.jpg" alt="logo" width="200"  height="auto" />
 
 </div>
 
@@ -38,9 +31,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Roman Emperors - React & Redux Microverse Capstone Project Module 3<a name="about-project"></a>
+# 📖 Portfolio Barrenechea<a name="about-project"></a>
 
-> Roman Emperors React & Redux App developed with Nodejs, Html, Css, Js, Webpack, React and Redux
+> Portfolio Barrenechea App developed with Nodejs, Html, Tailwind, Js, Webpack, React and Redux
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,6 +44,7 @@
   <ul>
     <li><a href="https://en.wikipedia.org/wiki/HTML">Html</a></li>
     <li><a href="https://en.wikipedia.org/wiki/CSS">Css</a></li>
+    <li><a href="https://v2.tailwindcss.com/">Tailwind</a></li>
     <li><a href="https://en.wikipedia.org/wiki/JavaScript">Vanilla Javascript</a></li>
     <li><a href="https://webpack.js.org/">Webpack</a></li>
     <li><a href="https://react.org/">React</a></li>
@@ -62,20 +56,18 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Dynasty page with search function**
-- **Emperor Dinasty Page**
-- **Emperor Details Page**
+- **Responsive Design**
 - **Routing with React Route**
-- **API connection using Redux Toolkit AsyncThunk**
-- **Css module Style**
+- **Projects Section**
+- **Modal Projects**
+- **About Section**
+- **Contact Form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-<a href="https://roman-emperors.onrender.com">Visit the Live Demo</a>
-
-<a href="https://www.loom.com/share/d7dd06204ab34f528737095e9a0982ab">Visit my Loom Presentaion Video</a>
+<a href="https://jade-kangaroo-3d4c91.netlify.app/">Visit the Live Demo</a>
 
 <br/>
 
@@ -88,7 +80,7 @@ To get a local copy up and use as a template for your own portafolio site, follo
 Clone this repository to your desired folder:
 
 ```sh
-  https://github.com/chelobotix/Roman-Emperors-Capstone.git
+  https://github.com/chelobotix/Portfolio_React.git
 ```
 
 To install the necessary dependencies, you should run:
@@ -99,32 +91,13 @@ To install the necessary dependencies, you should run:
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +105,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Author1**
+👤 **Author**
 
 : Marcelo Alarcon Barrenechea
 
@@ -145,7 +118,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Storage**
+- [ ] **More Projects**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,4 +157,4 @@ This project is [MIT](<a href="./licence">License</a>) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Original design idea by <a href="https://www.behance.net/sakwadesignstudio">Nelson Sakwa on Behance</a>.
+Original design idea by <a href="https://hellonesh.io/">https://hellonesh.io/</a>.
