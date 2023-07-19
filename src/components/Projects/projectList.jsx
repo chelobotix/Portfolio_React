@@ -38,31 +38,57 @@ import { DiRuby } from "react-icons/di";
 import { TbApi } from "react-icons/tb";
 
 const projectList = [
+  // {
+  //   id: 1,
+  //   title: "Venom Precision",
+  //   images: [venomPrecision1, venomPrecision2, venomPrecision3, venomPrecision4],
+  //   description:
+  //     "Venom Precision Paintball Website: Your go-to source for all things paintball! Explore our extensive collection of articles.",
+  //   techs: [<FaReact />, <SiRubyonrails />, <IoLogoJavascript />],
+  //   techsStyle: { color: "white", size: "1.5rem" },
+  //   icon: <SiRubyonrails />,
+  //   iconStyle: { color: "C6322C", size: "2rem" },
+  //   liveDemo: "https://velvety-genie-9ab88d.netlify.app/",
+  //   gitHub: "https://github.com/chelobotix/VenomPrecision-back-end",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Roman Emperors",
+  //   images: [romanEmperors1, romanEmperors2, romanEmperors3],
+  //   description:
+  //     "Dive into the fascinating history of the Roman Empire through our comprehensive website. Built using React and Redux, our platform offers a seamless user experience with our API connection.",
+  //   techs: [<FaReact />, <SiRedux />, <TbApi />],
+  //   techsStyle: { color: "white", size: "1.5rem" },
+  //   icon: <FaReact />,
+  //   iconStyle: { color: "5ED3F3", size: "2rem" },
+  //   liveDemo: "https://illustrious-rolypoly-9106b9.netlify.app/",
+  //   gitHub: "https://github.com/chelobotix/To-Do-List-Barrenechea",
+  // },
   {
-    id: 1,
-    title: "Venom Precision",
-    images: [venomPrecision1, venomPrecision2, venomPrecision3, venomPrecision4],
+    id: 9,
+    title: "Retro Watchers",
+    images: [retroWatchers1, retroWatchers2, retroWatchers3, retroWatchers4],
     description:
-      "Venom Precision Paintball Website: Your go-to source for all things paintball! Explore our extensive collection of articles.",
-    techs: [<FaReact />, <SiRubyonrails />, <IoLogoJavascript />],
+      "A '90s-inspired movie website showcasing all the nostalgic classics. Powered by an external API, it brings you detailed information on your favorite films.",
+    techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
-    icon: <SiRubyonrails />,
-    iconStyle: { color: "C6322C", size: "2rem" },
-    liveDemo: "https://velvety-genie-9ab88d.netlify.app/",
-    gitHub: "https://github.com/chelobotix/VenomPrecision-back-end",
+    icon: <IoLogoJavascript />,
+    iconStyle: { color: "EFD81D", size: "2rem" },
+    liveDemo: "https://thunderous-dasik-81b884.netlify.app/",
+    gitHub: "https://github.com/chelobotix/Retro-Watchers-Capstone",
   },
   {
-    id: 2,
-    title: "Roman Emperors",
-    images: [romanEmperors1, romanEmperors2, romanEmperors3],
+    id: 6,
+    title: "Leader Board",
+    images: [leaderboard1, leaderboard2, leaderboard3],
     description:
-      "Dive into the fascinating history of the Roman Empire through our comprehensive website. Built using React and Redux, our platform offers a seamless user experience with our API connection.",
-    techs: [<FaReact />, <SiRedux />, <TbApi />],
+      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Embrace the competitive spirit of Middle-earth.",
+    techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />, <SiWebpack />, <TbApi />],
     techsStyle: { color: "white", size: "1.5rem" },
-    icon: <FaReact />,
-    iconStyle: { color: "5ED3F3", size: "2rem" },
-    liveDemo: "https://illustrious-rolypoly-9106b9.netlify.app/",
-    gitHub: "https://github.com/chelobotix/To-Do-List-Barrenechea",
+    icon: <SiWebpack />,
+    iconStyle: { color: "75AFCC", size: "2rem" },
+    liveDemo: "https://whimsical-peony-71ff5a.netlify.app/",
+    gitHub: "https://github.com/chelobotix/Leaderboard-Chelobotix",
   },
   {
     id: 3,
@@ -103,19 +129,7 @@ const projectList = [
     liveDemo: "https://chelobotix.github.io/To-Do-List-Barrenechea/dist/",
     gitHub: "https://github.com/chelobotix/To-Do-List-Barrenechea",
   },
-  {
-    id: 6,
-    title: "Leader Board",
-    images: [leaderboard1, leaderboard2, leaderboard3],
-    description:
-      "Leaderboard Lord of the Rings: A modular JavaScript and Webpack-powered website for tracking and displaying player scores. Embrace the competitive spirit of Middle-earth.",
-    techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />, <SiWebpack />, <TbApi />],
-    techsStyle: { color: "white", size: "1.5rem" },
-    icon: <SiWebpack />,
-    iconStyle: { color: "75AFCC", size: "2rem" },
-    liveDemo: "https://whimsical-peony-71ff5a.netlify.app/",
-    gitHub: "https://github.com/chelobotix/Leaderboard-Chelobotix",
-  },
+
   {
     id: 7,
     title: "Book Store",
@@ -142,32 +156,20 @@ const projectList = [
     liveDemo: "https://friendly-axolotl-ffabbd.netlify.app/",
     gitHub: "https://github.com/chelobotix/Space-Travelers-Hub",
   },
-  {
-    id: 9,
-    title: "Retro Watchers",
-    images: [retroWatchers1, retroWatchers2, retroWatchers3, retroWatchers4],
-    description:
-      "A '90s-inspired movie website showcasing all the nostalgic classics. Powered by an external API, it brings you detailed information on your favorite films.",
-    techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
-    techsStyle: { color: "white", size: "1.5rem" },
-    icon: <IoLogoJavascript />,
-    iconStyle: { color: "EFD81D", size: "2rem" },
-    liveDemo: "https://thunderous-dasik-81b884.netlify.app/",
-    gitHub: "https://github.com/chelobotix/Retro-Watchers-Capstone",
-  },
-  {
-    id: 10,
-    title: "School Library",
-    images: [schoolLibrary1, schoolLibrary2, schoolLibrary3],
-    description:
-      "Experience a streamlined School Library web site built using Ruby, boasting a terminal interface. Effortlessly manage books and people through efficient CRUD operations, ensuring smooth functionality for users.",
-    techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
-    techsStyle: { color: "white", size: "1.5rem" },
-    icon: <DiRuby />,
-    iconStyle: { color: "C6322C", size: "2rem" },
-    liveDemo: "https://github.com/chelobotix/school-library",
-    gitHub: "https://github.com/chelobotix/school-library",
-  },
+
+  // {
+  //   id: 10,
+  //   title: "School Library",
+  //   images: [schoolLibrary1, schoolLibrary2, schoolLibrary3],
+  //   description:
+  //     "Experience a streamlined School Library web site built using Ruby, boasting a terminal interface. Effortlessly manage books and people through efficient CRUD operations, ensuring smooth functionality for users.",
+  //   techs: [<FaHtml5 />, <FaCss3Alt />, <IoLogoJavascript />],
+  //   techsStyle: { color: "white", size: "1.5rem" },
+  //   icon: <DiRuby />,
+  //   iconStyle: { color: "C6322C", size: "2rem" },
+  //   liveDemo: "https://github.com/chelobotix/school-library",
+  //   gitHub: "https://github.com/chelobotix/school-library",
+  // },
 ];
 
 export default projectList;
