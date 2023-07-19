@@ -2,12 +2,13 @@
 
 <div align="center">
 
-  <img src="https://user-images.githubusercontent.com/65084923/227249151-5c9fda8d-8ab8-41e4-945d-ebd4b36a5071.jpg" alt="logo" width="350"  height="auto" />
+  <img src="https://github.com/chelobotix/Portfolio_React/assets/65084923/f65f1aa7-8403-446d-b7cd-2eb54642bf1c" alt="logo" width="400"  height="auto" />
   <br/>
-
+  <img src="https://github.com/chelobotix/Portfolio_React/assets/65084923/6ad1cb1e-11e6-495f-97e5-0f24595e4cfd" alt="logo" width="400"  height="auto" />
   <h3><b>Portfolio Barrenechea</b></h3>
 
-  <img src="https://user-images.githubusercontent.com/65084923/227247099-f4c5cecc-9b37-427e-8222-e98b8382823d.jpg" alt="logo" width="200"  height="auto" />
+  <img src="https://github.com/chelobotix/Portfolio_React/assets/65084923/9f3fcb20-c3b3-4c80-be34-86ef6f0e6a98" alt="logo" width="250"  height="auto" />
+  <img src="https://github.com/chelobotix/Portfolio_React/assets/65084923/b63e9f75-4856-4742-8fc0-47cb62e00d91" alt="logo" width="250"  height="auto" />
 
 </div>
 
