@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 const ContactForm = () => {
   return (
-    <section className="flex flex-col items-center w-full pb-7 bg-gradient-to-t from-dark-pink to-dark-blue">
+    <section id="contact" className="flex flex-col items-center w-full pb-7 bg-gradient-to-t from-dark-pink to-dark-blue">
       <h2 className="animateText text-4xl font-bold mt-12 mb-5 lg:text-5xl lg:mb-12">Contact me</h2>
       <form
         className="w-[320px] md:w-1/2 flex flex-col gap-3 p-2 item-center"

@@ -1,6 +1,7 @@
-import logo from "@/assets/images/logo_barrenechea.png";
+import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
+import logo from "@/assets/images/logo_barrenechea.png";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -12,19 +13,13 @@ const Nav = () => {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
-        <a href="#projects" className="flex items-center">
-          Projects
-        </a>
+        <Link to="/#projects">Projects</Link>
       </Typography>
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
-        <a href="#about" className="flex items-center">
-          About
-        </a>
+        <Link to="/#about">About</Link>
       </Typography>
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
-        <a href="#" className="flex items-center">
-          Contact
-        </a>
+        <Link to="/#contact">Contact</Link>
       </Typography>
     </ul>
   );
