@@ -25,7 +25,7 @@ const Nav = () => {
   );
 
   return (
-    <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-50">
+    <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-50 px-7">
       <div className="flex items-center justify-between text-white ">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
           <img
