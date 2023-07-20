@@ -76,6 +76,7 @@ const projectList = [
     iconStyle: { color: "EFD81D", size: "2rem" },
     liveDemo: "https://thunderous-dasik-81b884.netlify.app/",
     gitHub: "https://github.com/chelobotix/Retro-Watchers-Capstone",
+    features: ["Webpack", "Callbacks and Promises", "Send and receive data from an API", "JavaScript code asynchronous"],
   },
   {
     id: 3,
@@ -89,6 +90,7 @@ const projectList = [
     iconStyle: { color: "EFD81D", size: "2rem" },
     liveDemo: "https://chelobotix.github.io/Capstone-project-Protoje-concert/",
     gitHub: "https://github.com/chelobotix/Capstone-project-Protoje-concert",
+    features: ["Hamburger menu", "Featured Performers section", "Load more button", "Social media menu"],
   },
   {
     id: 6,
@@ -102,6 +104,7 @@ const projectList = [
     iconStyle: { color: "75AFCC", size: "2rem" },
     liveDemo: "https://whimsical-peony-71ff5a.netlify.app/",
     gitHub: "https://github.com/chelobotix/Leaderboard-Chelobotix",
+    features: ["LeaderBoard Table", "Add Score Form", "Send and receive data from an API"],
   },
   {
     id: 4,
@@ -115,6 +118,7 @@ const projectList = [
     iconStyle: { color: "EFD81D", size: "2rem" },
     liveDemo: "https://chelobotix.github.io/Awesome_Book/",
     gitHub: "https://github.com/chelobotix/Awesome_Book",
+    features: ["Single Page Application (SPA)", "JavaScript - Modules ", "Display list of books", "Localstorage management"],
   },
   {
     id: 5,
@@ -128,6 +132,7 @@ const projectList = [
     iconStyle: { color: "75AFCC", size: "2rem" },
     liveDemo: "https://chelobotix.github.io/To-Do-List-Barrenechea/dist/",
     gitHub: "https://github.com/chelobotix/To-Do-List-Barrenechea",
+    features: ["Webpack", "CRUD Task", "Remove Multiple Tasks", "Localstorage management"],
   },
 
   {
@@ -142,6 +147,7 @@ const projectList = [
     iconStyle: { color: "5ED3F3", size: "2rem" },
     liveDemo: "https://fascinating-cat-ad9483.netlify.app",
     gitHub: "https://github.com/chelobotix/Book-Store-Chelobotix",
+    features: ["Redux Toolkit", "API connection", "Css module Style"],
   },
   {
     id: 8,
@@ -155,6 +161,7 @@ const projectList = [
     iconStyle: { color: "5ED3F3", size: "2rem" },
     liveDemo: "https://friendly-axolotl-ffabbd.netlify.app/",
     gitHub: "https://github.com/chelobotix/Space-Travelers-Hub",
+    features: ["Space-X Rockets, Missions and Profile", "API connection", "React Route", "Redux"],
   },
 
   // {
