@@ -47,8 +47,8 @@ const Hero = () => {
           <h1 className="text-white font-bold  text-3xl drop-shadow-md font-monument text-left md:text-5xl md:w-[730px] 2xl:text-6xl leading-9 tracking-wider pl-6">
             I'm Marcelo
             <br />
-            <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack </span>
-            Software Engineer
+            <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack</span>
+            <span className=" md:tracking-normal 2xl:text-5xl">Software Engineer</span>
           </h1>
           <div className="w-4/5 max-w-lg flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
             <p className="text-white px-1 italic text-sm mb-2">A lifelong passion for PCs fuels me.</p>
