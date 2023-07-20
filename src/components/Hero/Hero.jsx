@@ -50,11 +50,12 @@ const Hero = () => {
             <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack </span>
             Software Engineer
           </h1>
-          <div className="w-4/5 flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
+          <div className="w-4/5 max-w-lg flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
             <p className="text-white px-1 italic text-sm mb-2">A lifelong passion for PCs fuels me.</p>
             <p className="text-white pl-1 italic text-sm mb-2">
               Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
             </p>
+            <p className="text-white pl-1 italic text-sm mb-1">I know how to make a great pizza.</p>
             <p className="text-white pl-1 italic text-sm mb-1">Open to new opportunities.</p>
           </div>
           <CallAction />
