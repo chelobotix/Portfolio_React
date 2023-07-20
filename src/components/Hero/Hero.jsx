@@ -42,15 +42,15 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <div className="flex flex-col items-start justify-center mt-8 py-8 md:mt-16">
+        <div className="flex flex-col w-11/12 items-start justify-center mt-8 py-8 md:mt-16">
           <p className="animateText font-semibold italic pl-6">Welcome to my Portfolio</p>
-          <h1 className="text-white font-bold  text-4xl drop-shadow-md font-monument text-left md:text-5xl md:w-[730px] 2xl:text-6xl leading-9 tracking-wider pl-6">
+          <h1 className="text-white font-bold  text-3xl drop-shadow-md font-monument text-left md:text-5xl md:w-[730px] 2xl:text-6xl leading-9 tracking-wider pl-6">
             I'm Marcelo
             <br />
             <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack </span>
             Software Engineer
           </h1>
-          <div className="w-[310px] flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
+          <div className="w-4/5 flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
             <p className="text-white px-1 italic text-sm mb-2">A lifelong passion for PCs fuels me.</p>
             <p className="text-white pl-1 italic text-sm mb-2">
               Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
