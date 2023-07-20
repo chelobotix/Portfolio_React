@@ -71,7 +71,7 @@ const Modal = (props) => {
             ))}
           </Carousel>
         )}
-        <div className="flex flex-col items-center bg-dark-blue w-11/12 lg:w-9/12  mb-1 opacity-80 rounded-md ring-1 ring-white">
+        <div className="flex flex-col items-center bg-dark-blue w-11/12 max-w-[900px] lg:w-9/12  mb-1 opacity-80 rounded-md ring-1 ring-white">
           <p className="text-ligth-pink font-semibold">Stack</p>
           <ul className="flex">
             {project.techs.map((tech) => (
