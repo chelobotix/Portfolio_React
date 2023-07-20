@@ -18,7 +18,12 @@ const Nav = () => {
       <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
         <Link to="/#about">About</Link>
       </Typography>
-      <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="py-1 px-3 font-semibold font-monument text-lg border-2 border-white rounded-sm"
+      >
         <Link to="/#contact">Contact</Link>
       </Typography>
     </ul>

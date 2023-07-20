@@ -17,7 +17,7 @@ const ContactForm = () => {
         <Button
           name="Get in touch"
           style={
-            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-lg text-dark-blue hover:border-white "
+            "px-4 py-1 text-sm font-semibold border-2 xl:w-1/2 m-auto border-letter-blue bg-letter-blue rounded-lg text-dark-blue hover:border-white "
           }
           liveDemo={""}
           modalConf={{}}
