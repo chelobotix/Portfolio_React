@@ -6,35 +6,35 @@ const SocialMediaIcons = (props) => {
   return (
     <>
       <li>
-        <IconContext.Provider value={{ color: color, size: size }}>
+        <IconContext.Provider value={{ color: color, size: size, className: "hover:scale-125 duration-300" }}>
           <a href="https://twitter.com/marcealarconb">
             <FaTwitter />
           </a>
         </IconContext.Provider>
       </li>
       <li>
-        <IconContext.Provider value={{ color: color, size: size }}>
+        <IconContext.Provider value={{ color: color, size: size, className: "hover:scale-125 duration-300" }}>
           <a href="https://www.linkedin.com/in/marceloalarconb/">
             <FaLinkedinIn />
           </a>
         </IconContext.Provider>
       </li>
       <li>
-        <IconContext.Provider value={{ color: color, size: size }}>
+        <IconContext.Provider value={{ color: color, size: size, className: "hover:scale-125 duration-300" }}>
           <a href="https://chelobotix.github.io/Portafolio-Website/images/github.svg">
             <FaGithub />
           </a>
         </IconContext.Provider>
       </li>
       <li>
-        <IconContext.Provider value={{ color: color, size: size }}>
+        <IconContext.Provider value={{ color: color, size: size, className: "hover:scale-125 duration-300" }}>
           <a href="https://medium.com/@marceloalarconbarrenechea">
             <FaMedium />
           </a>
         </IconContext.Provider>
       </li>
       <li>
-        <IconContext.Provider value={{ color: color, size: size }}>
+        <IconContext.Provider value={{ color: color, size: size, className: "hover:scale-125 duration-300" }}>
           <a href="https://wellfound.com/u/marceloalarconb">
             <FaAngellist />
           </a>
