@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { HashLink as Link } from "react-router-hash-link";
+import { DiRuby, DiHtml5, DiReact, DiCss3 } from "react-icons/di";
 import Contact from "../Contact/Contact";
 import CallAction from "../CallAction/CallAction";
 import DownArrow from "../DownArrow/DownArrow";
@@ -50,13 +50,13 @@ const Hero = () => {
             <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack</span>
             <span className=" md:tracking-normal 2xl:text-5xl">Software Engineer</span>
           </h1>
-          <div className="w-4/5 max-w-lg flex flex-col rounded-md opacity-70 ml-5 mt-3 mr-1 bg-indigo-800">
-            <p className="text-white px-1 italic text-sm mb-2">A lifelong passion for PCs fuels me.</p>
-            <p className="text-white pl-1 italic text-sm mb-2">
+          <div className="w-4/5 max-w-lg flex flex-col rounded-md ml-5 mt-3 mr-1 opacity-95 bg-white ring-2 ring-dark-pink p-2">
+            <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider">A lifelong passion for PCs fuels me.</p>
+            <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5">
               Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
             </p>
-            <p className="text-white pl-1 italic text-sm mb-1">I know how to make a great pizza.</p>
-            <p className="text-white pl-1 italic text-sm mb-1">Open to new opportunities.</p>
+            <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">I know how to make a great Pizza.</p>
+            <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">Open to new opportunities.</p>
           </div>
           <CallAction />
         </div>
