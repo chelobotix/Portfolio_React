@@ -7,6 +7,7 @@ import bg_img from "@/assets/images/header_bg.jpg";
 import saturn from "@/assets/images/saturn.png";
 import comet from "@/assets/images/comet.png";
 import tesseract from "@/assets/images/Tesseract.gif";
+import frame from "@/assets/images/frame1.png";
 import style from "./Hero.module.css";
 import "@/assets/style/animateText.css";
 const Hero = () => {
@@ -50,13 +51,17 @@ const Hero = () => {
             <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack</span>
             <span className=" md:tracking-normal 2xl:text-5xl">Software Engineer</span>
           </h1>
-          <div className="w-4/5 max-w-lg flex flex-col rounded-md ml-5 mt-3 mr-1 opacity-95 bg-white ring-2 ring-dark-pink p-2">
-            <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider">A lifelong passion for PCs fuels me.</p>
-            <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5">
-              Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
-            </p>
-            <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">I know how to make a great Pizza.</p>
-            <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">Open to new opportunities.</p>
+          <div className="w-[800px]">
+            <div className={`w-[600px] opacity-95 flex justify-center ${style.frame}`}>
+              <div className="w-3/4">
+                <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider">A lifelong passion for PCs fuels me.</p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5">
+                  Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
+                </p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">I know how to make a great Pizza.</p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">Open to new opportunities.</p>
+              </div>
+            </div>
           </div>
           <CallAction />
         </div>

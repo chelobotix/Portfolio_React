@@ -57,3 +57,10 @@
     transform: translate(-550px, -250px);
   }
 }
+
+.frame {
+  background-image: url("../../assets/images/frame1.png");
+  background-repeat: no-repeat;
+  background-size: 383px 273px;
+  padding-top: 30px;
+}
