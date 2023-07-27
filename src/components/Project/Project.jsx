@@ -48,7 +48,7 @@ const Project = (props) => {
         ))}
       </ul>
       <p className="text-sm text-letter-blue mt-2 px-6 text-center">{sliceDescription(description)}</p>
-      <div className="flex gap-2 mt-4 ">
+      <div className="flex gap-2 mt-4 mb-5 ">
         <Button
           name="Brief Scan"
           style={
@@ -59,10 +59,17 @@ const Project = (props) => {
           projectId={id}
           type={"button"}
         />
+        <div className="flex flex-col items-center text-sm font-semibold border-2 border-black bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white">
+          <a href={gitHub} target="_blank">
+            <IconContext.Provider value={{ color: "white", size: "2.5rem", className: style.github }}>
+              <BsGithub />
+            </IconContext.Provider>
+          </a>
+        </div>
         <Button
           name="Live Demo"
           style={
-            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-white "
+            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-dark-blue hover:scale-[1.1] durarion-100"
           }
           liveDemo={liveDemo}
           modalConf={modalConf}
@@ -70,14 +77,6 @@ const Project = (props) => {
           projectId={id}
           type={"button"}
         />
-      </div>
-      <div className="flex flex-col items-center my-3">
-        <a href={gitHub} target="_blank">
-          <IconContext.Provider value={{ color: "black", size: "2rem" }}>
-            <BsGithub />
-          </IconContext.Provider>
-        </a>
-        <p className="font-semibold text-sm">GitHub Repo</p>
       </div>
     </article>
   );
