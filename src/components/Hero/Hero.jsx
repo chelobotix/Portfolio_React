@@ -43,30 +43,35 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <div className="flex flex-col w-11/12 items-start justify-center mt-8 py-8 md:mt-16">
+        <div className="flex flex-col items-center w-11/12 mt-32">
           <p className="animateText font-semibold italic pl-6">Welcome to my Portfolio</p>
-          <h1 className="text-white font-bold  text-3xl drop-shadow-md font-monument text-left md:text-5xl md:w-[730px] 2xl:text-6xl leading-9 tracking-wider pl-6">
+          <h1 className="text-white font-bold  text-3xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
             I'm Marcelo
-            <br />
-            <span className=" md:tracking-normal 2xl:text-5xl">The Full Stack</span>
-            <span className=" md:tracking-normal 2xl:text-5xl">Software Engineer</span>
+            <p className=" md:tracking-normal 2xl:text-5xl">The Full Stack</p>
+            <p className=" md:tracking-normal 2xl:text-5xl">Software Engineer</p>
           </h1>
-          <div className="w-[800px]">
-            <div className={`w-[600px] opacity-95 flex justify-center ${style.frame}`}>
-              <div className="w-3/4">
-                <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider">A lifelong passion for PCs fuels me.</p>
-                <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5">
+
+          <div className="w-full">
+            <div className={`opacity-90 flex justify-center ${style.frame}`}>
+              <div className="w-9/12">
+                <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider text-center">
+                  A lifelong passion for PCs fuels me.
+                </p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5 text-center">
                   Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
                 </p>
-                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">I know how to make a great Pizza.</p>
-                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider">Open to new opportunities.</p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider text-center">
+                  I know how to make a great Pizza.
+                </p>
+                <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider text-center">Open to new opportunities.</p>
               </div>
             </div>
           </div>
+
           <CallAction />
         </div>
         <div>
-          <img className="w-28 h-auto pb-24 lg:w-40 lg:pb-2 2xl:w-48" src={tesseract} alt="Tesseract" />
+          <img className="w-28 h-auto lg:w-40 lg:pb-2 2xl:w-48" src={tesseract} alt="Tesseract" />
         </div>
         <div>
           <p className="text-white text-l md:text-xl lg:text-2xl italic font-monument text-center animateText">
