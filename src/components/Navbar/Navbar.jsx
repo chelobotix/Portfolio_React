@@ -12,17 +12,27 @@ const Nav = () => {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-semibold font-monument text-lg hover:scale-125 duration-300"
+      >
         <Link to="/#projects">Projects</Link>
       </Typography>
-      <Typography as="li" variant="small" color="white" className="p-1 font-semibold font-monument text-lg">
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-semibold font-monument text-lg hover:scale-125 duration-300"
+      >
         <Link to="/#about">About</Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="white"
-        className="py-1 px-3 font-semibold font-monument text-lg border-2 border-white rounded-sm"
+        className="py-1 px-3 font-semibold font-monument text-lg border-2 border-white rounded-sm hover:scale-110 duration-300"
       >
         <Link to="/#contact">Contact</Link>
       </Typography>

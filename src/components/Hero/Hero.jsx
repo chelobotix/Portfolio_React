@@ -43,25 +43,26 @@ const Hero = () => {
         >
           <img src={comet} alt="" />
         </motion.div>
-        <div className="flex flex-col items-center w-11/12 mt-32">
-          <p className="animateText font-semibold italic pl-6">Welcome to my Portfolio</p>
-          <h1 className="text-white font-bold  text-3xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
+        <div className="flex flex-col items-center w-11/12 mt-20">
+          <p className="animateText text-sm font-semibold italic pl-6 md:py-2">Welcome to my Portfolio</p>
+          <h1 className="text-white font-bold  text-3xl md:text-4xl xl:text-5xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
             I'm Marcelo
-            <p className=" md:tracking-normal 2xl:text-5xl">The Full Stack</p>
-            <p className=" md:tracking-normal 2xl:text-5xl">Software Engineer</p>
+            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">The Full Stack</p>
+            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Software Engineer</p>
           </h1>
 
-          <div className="w-full">
-            <div className={`opacity-90 flex justify-center ${style.frame}`}>
+          <div className="w-full flex justify-center">
+            <div className={`opacity-[0.85] flex justify-center ${style.frame}`}>
               <div className="w-9/12">
                 <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider text-center">
                   A lifelong passion for PCs fuels me.
                 </p>
                 <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5 text-center">
-                  Ready to develop and maintain efficient, clean code applications with Javascript, React, and Ruby on Rails.
+                  Ready to develop and maintain efficient, clean code applications with{" "}
+                  <span className="underline">Javascript, React, and Ruby on Rails.</span>
                 </p>
                 <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider text-center">
-                  I know how to make a great Pizza.
+                  I also know how to make a great <span className="underline">Pizza.</span>
                 </p>
                 <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider text-center">Open to new opportunities.</p>
               </div>
@@ -71,7 +72,7 @@ const Hero = () => {
           <CallAction />
         </div>
         <div>
-          <img className="w-28 h-auto lg:w-40 lg:pb-2 2xl:w-48" src={tesseract} alt="Tesseract" />
+          <img className="w-28 h-auto lg:w-36 lg:pb-2" src={tesseract} alt="Tesseract" />
         </div>
         <div>
           <p className="text-white text-l md:text-xl lg:text-2xl italic font-monument text-center animateText">
@@ -79,7 +80,6 @@ const Hero = () => {
           </p>
           <div className="flex flex-col items-center justify-center">
             <Contact />
-            <DownArrow color={"#ba87CA"} size={"2rem"} />
           </div>
         </div>
       </div>
