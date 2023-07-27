@@ -57,3 +57,12 @@
     transform: translate(-550px, -250px);
   }
 }
+
+.frame {
+  background-image: url("../../assets/images/frame1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 26px;
+  padding-bottom: 42px;
+  max-width: 550px;
+}
