@@ -48,28 +48,34 @@ const Project = (props) => {
         ))}
       </ul>
       <p className="text-sm text-letter-blue mt-2 px-6 text-center">{sliceDescription(description)}</p>
-      <div className="flex gap-2 mt-4 mb-5 ">
+
+      <div className="flex flex-col items-center mt-3 mb-2">
+        <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
+          <a href={gitHub} target="_blank">
+            <IconContext.Provider value={{ color: "white", size: "2rem", className: style.github }}>
+              <BsGithub />
+            </IconContext.Provider>
+          </a>
+        </div>
+        <p className="text-xs text-white">GitHub</p>
+      </div>
+
+      <div className="flex items-center gap-2 mb-5">
         <Button
           name="Brief Scan"
           style={
-            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue rounded-3xl text-letter-blue hover:bg-letter-blue hover:border-white hover:text-dark-blue"
+            "px-3 py-1 text-sm font-semibold border-2 border-white rounded-3xl text-white hover:bg-white hover:border-dark-blue hover:text-dark-blue duration-700"
           }
           modalConf={modalConf}
           setModalConf={setModalConf}
           projectId={id}
           type={"button"}
         />
-        <div className="flex flex-col items-center text-sm font-semibold border-2 border-black bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white">
-          <a href={gitHub} target="_blank">
-            <IconContext.Provider value={{ color: "white", size: "2.5rem", className: style.github }}>
-              <BsGithub />
-            </IconContext.Provider>
-          </a>
-        </div>
+
         <Button
           name="Live Demo"
           style={
-            "px-4 py-1 text-sm font-semibold border-2 border-letter-blue bg-letter-blue rounded-3xl text-dark-blue hover:border-dark-blue hover:scale-[1.1] durarion-100"
+            "px-3 py-1 text-sm font-semibold border-2 border-letter-blue bg-white rounded-3xl text-dark-blue hover:border-white hover:bg-transparent hover:text-white duration-700"
           }
           liveDemo={liveDemo}
           modalConf={modalConf}
