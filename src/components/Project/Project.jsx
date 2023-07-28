@@ -32,7 +32,7 @@ const Project = (props) => {
         </div>
       </div>
       <img
-        className="w-72 h-48 md:w-80 md:h-56 2xl:w-80 2xl:h-60 rounded-2xl mt-9 border-2 border-letter-blue"
+        className="w-72 h-48 md:w-80 md:h-56 2xl:w-80 2xl:h-60 rounded-2xl mt-9 border-2 border-white"
         src={images[0]}
         alt="project_iamge"
       />
@@ -52,7 +52,7 @@ const Project = (props) => {
       <div className="flex flex-col items-center mt-3 mb-2">
         <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
           <a href={gitHub} target="_blank">
-            <IconContext.Provider value={{ color: "white", size: "2rem", className: style.github }}>
+            <IconContext.Provider value={{ color: "white", size: "2rem", className: "github" }}>
               <BsGithub />
             </IconContext.Provider>
           </a>
