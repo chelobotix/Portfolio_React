@@ -68,7 +68,7 @@
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-<a href="https://jade-kangaroo-3d4c91.netlify.app/">Visit the Live Demo</a>
+<a href="https://barrenechea.netlify.app/">Visit the Live Demo</a>
 
 <br/>
 
