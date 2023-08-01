@@ -4,6 +4,7 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill, BsGithub } from 
 import { AiFillCloseCircle } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import Button from "../Button/Button";
+import ImageGallery from "react-image-gallery";
 
 const Modal = (props) => {
   const { modalConf, setModalConf } = props;
@@ -14,13 +15,20 @@ const Modal = (props) => {
 
   const project = modalConf.projects.find((project) => project.id === modalConf.projectId);
   document.body.style.overflow = modalConf.scroll;
+  const projectImages = project.images.map((image) => {
+    return {
+      original: image,
+      thumbnail: image,
+    };
+  });
 
   return (
     <div
-      className={`${modalConf.visible} flex items-start w-screen h-screen overflow-y-auto backdrop-blur-sm bg-black/50 absolute z-30`}
+      className={`${modalConf.visible} flex items-start justify-center w-screen h-screen overflow-y-auto backdrop-blur-sm bg-black/50 absolute z-30 p-1`}
       style={{ top: `${modalConf.positionY}px` }}
+      onClick={handleModal}
     >
-      <div className="flex flex-col items-center ">
+      <div onClick={(e) => e.stopPropagation()} className="flex flex-col items-center">
         <p
           onClick={handleModal}
           className="text-white text-[30px] font-bold self-end p-2 hover:cursor-pointer stroke-black stroke-2"
@@ -35,44 +43,9 @@ const Modal = (props) => {
         {!modalConf.resetCarousel ? (
           <div></div>
         ) : (
-          <Carousel
-            className="h-auto w-11/12 xl:w-2/4 rounded-lg m-2"
-            prevArrow={({ handlePrev }) => (
-              <IconButton
-                variant="text"
-                color="blue"
-                size="md"
-                onClick={handlePrev}
-                className="!absolute top-2/4 -translate-y-2/4 left-4"
-              >
-                <IconContext.Provider value={{ color: "white", size: "2rem" }}>
-                  <BsFillArrowLeftCircleFill className="stroke-black stroke-[0.7]" />
-                </IconContext.Provider>
-              </IconButton>
-            )}
-            nextArrow={({ handleNext }) => (
-              <IconButton
-                variant="text"
-                color="blue"
-                size="md"
-                onClick={handleNext}
-                className="!absolute top-2/4 -translate-y-2/4 !right-4"
-              >
-                <IconContext.Provider value={{ color: "white", size: "2rem", className: "stroke-black" }}>
-                  <BsFillArrowRightCircleFill className="stroke-black stroke-[0.7]" />
-                </IconContext.Provider>
-              </IconButton>
-            )}
-          >
-            {project.images.map((img) => (
-              <img
-                key={uuidv4()}
-                src={img}
-                alt={`image of ${project.title}`}
-                className="object-cover border-4 border-white rounded-xl"
-              />
-            ))}
-          </Carousel>
+          <div className="w-10/12 flex justify-center">
+            <ImageGallery items={projectImages} thumbnailClass={"w-10"} />
+          </div>
         )}
         <div className="flex gap-6 justify-center items-center">
           <div className="flex flex-col items-center mt-3 mb-2">
