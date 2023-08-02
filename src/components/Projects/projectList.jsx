@@ -82,7 +82,8 @@ const projectList = [
     id: 3,
     title: "Reggae Concert",
     images: [reggaeConcert1, reggaeConcert2, reggaeConcert3, reggaeConcert4],
-    description: "A fictitious Concert web page to demonstrate my skills in Html, Css and DOM manipulation with Javascript",
+    description:
+      "A fictitious Reggae Concert web page to demonstrate my skills in Html, Css and DOM manipulation with Javascript",
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
