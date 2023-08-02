@@ -44,12 +44,13 @@ const projectList = [
     images: [venomPrecision1, venomPrecision2, venomPrecision3, venomPrecision4],
     description:
       "Venom Precision Paintball Website: Your go-to source for all things paintball! Explore our extensive collection of articles.",
-    techs: [<FaReact />, <SiRubyonrails />, <IoLogoJavascript />],
+    techs: [<FaReact />, <SiRedux />, <SiRubyonrails />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <SiRubyonrails />,
     iconStyle: { color: "C6322C", size: "2rem" },
     liveDemo: "https://velvety-genie-9ab88d.netlify.app/",
     gitHub: "https://github.com/chelobotix/VenomPrecision-back-end",
+    features: ["Front-end with React", "Redux Toolkit", "Back-end with Ruby on Rails", "PostgreSQL Database"],
   },
   // {
   //   id: 2,

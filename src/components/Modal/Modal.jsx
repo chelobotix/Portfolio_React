@@ -1,19 +1,31 @@
-import { v4 as uuidv4 } from "uuid";
-import { Carousel, IconButton } from "@material-tailwind/react";
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill, BsGithub } from "react-icons/bs";
-import { AiFillCloseCircle } from "react-icons/ai";
+import React, { useRef } from "react";
 import { IconContext } from "react-icons";
-import Button from "../Button/Button";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 import ImageGallery from "react-image-gallery";
+import { v4 as uuidv4 } from "uuid";
+import Button from "../Button/Button";
 
 const Modal = (props) => {
   const { modalConf, setModalConf } = props;
+  const modalRef = useRef(null);
 
   const handleModal = () => {
     setModalConf({ ...modalConf, visible: "hidden", scroll: "auto", resetCarousel: false });
   };
 
+  const setFocus = (event) => {
+    modalRef.current.focus();
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      setModalConf({ ...modalConf, visible: "hidden", scroll: "auto", resetCarousel: false });
+    }
+  };
+
   const project = modalConf.projects.find((project) => project.id === modalConf.projectId);
+
   document.body.style.overflow = modalConf.scroll;
   const projectImages = project.images.map((image) => {
     return {
@@ -25,8 +37,12 @@ const Modal = (props) => {
   return (
     <div
       className={`${modalConf.visible} flex items-start justify-center w-screen h-screen overflow-y-auto backdrop-blur-sm bg-black/50 absolute z-30 p-1`}
+      ref={modalRef}
+      tabIndex={0}
       style={{ top: `${modalConf.positionY}px` }}
       onClick={handleModal}
+      onLoad={setFocus}
+      onKeyDown={handleKeyDown}
     >
       <div onClick={(e) => e.stopPropagation()} className="flex flex-col items-center">
         <p

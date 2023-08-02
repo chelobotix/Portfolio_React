@@ -10,7 +10,7 @@ const Projects = () => {
     visible: "hidden",
     positionY: 0,
     projects: projectList,
-    projectId: 3,
+    projectId: 1,
     scroll: "auto",
     resetCarousel: false,
   });
