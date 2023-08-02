@@ -82,8 +82,7 @@ const projectList = [
     id: 3,
     title: "Reggae Concert",
     images: [reggaeConcert1, reggaeConcert2, reggaeConcert3, reggaeConcert4],
-    description:
-      "Venom Precision Paintball Website: Your go-to source for all things paintball! Explore our extensive collection of articles.",
+    description: "A fictitious Concert web page to demonstrate my skills in Html, Css and DOM manipulation with Javascript",
     techs: [<FaCss3Alt />, <FaHtml5 />, <IoLogoJavascript />],
     techsStyle: { color: "white", size: "1.5rem" },
     icon: <IoLogoJavascript />,
