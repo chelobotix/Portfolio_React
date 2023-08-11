@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext } from "react";
 import resumePDF from "@/assets/files/Marcelo_Alarcon_Resume.pdf";
+import ContextModal from "../context/ContextModal";
 
 const Button = (props) => {
-  const [visible, setVisible] = useState(true);
-  const { name, style, liveDemo, modalConf, setModalConf, projectId, type } = props;
+  const { name, style, liveDemo, projectId, type } = props;
+
+  const data = useContext(ContextModal);
 
   const buttonType = () => {
     if (name === "Live Demo") {
@@ -11,8 +13,8 @@ const Button = (props) => {
     } else if (name === "Get My Resume") {
       window.open(resumePDF, "_blank");
     } else if (name === "Brief Scan") {
-      setModalConf({
-        ...modalConf,
+      data.setModalConf({
+        ...data.modalConf,
         visible: "",
         positionY: `${window.scrollY}`,
         projectId: projectId,
