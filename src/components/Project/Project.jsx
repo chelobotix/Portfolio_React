@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import { BsGithub } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { v4 as uuidv4 } from "uuid";
@@ -51,7 +51,7 @@ const Project = (props) => {
 
       <div className="flex flex-col items-center mt-3 mb-2">
         <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
-          <a href={gitHub} target="_blank">
+          <a href={gitHub} target="_blank" rel="noreferrer">
             <IconContext.Provider value={{ color: "white", size: "2rem", className: "github" }}>
               <BsGithub />
             </IconContext.Provider>

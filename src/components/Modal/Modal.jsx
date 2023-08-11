@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { IconContext } from "react-icons";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
@@ -14,7 +14,7 @@ const Modal = (props) => {
     setModalConf({ ...modalConf, visible: "hidden", scroll: "auto", resetCarousel: false });
   };
 
-  const setFocus = (event) => {
+  const setFocus = () => {
     modalRef.current.focus();
   };
 
