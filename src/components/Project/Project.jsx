@@ -7,7 +7,6 @@ import style from "./Project.module.css";
 
 const Project = (props) => {
   const { id, title, images, description, techs, techsStyle, icon, iconStyle, liveDemo, gitHub } = props.details;
-  const { modalConf, setModalConf } = props;
 
   const sliceDescription = (string) => {
     if (string.length <= 99) {
@@ -66,8 +65,6 @@ const Project = (props) => {
           style={
             "px-3 py-1 text-sm font-semibold border-2 border-white rounded-3xl text-white hover:bg-white hover:border-dark-blue hover:text-dark-blue duration-700"
           }
-          modalConf={modalConf}
-          setModalConf={setModalConf}
           projectId={id}
           type={"button"}
         />
@@ -78,8 +75,6 @@ const Project = (props) => {
             "px-3 py-1 text-sm font-semibold border-2 border-letter-blue bg-white rounded-3xl text-dark-blue hover:border-white hover:bg-transparent hover:text-white duration-700"
           }
           liveDemo={liveDemo}
-          modalConf={modalConf}
-          setModalConf={setModalConf}
           projectId={id}
           type={"button"}
         />
