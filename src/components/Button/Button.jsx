@@ -5,7 +5,7 @@ import ContextModal from "../context/ContextModal";
 const Button = (props) => {
   const { name, style, liveDemo, projectId, type } = props;
 
-  const data = useContext(ContextModal);
+  const { modalConf, setModalConf } = useContext(ContextModal);
 
   const buttonType = () => {
     if (name === "Live Demo") {
@@ -13,8 +13,8 @@ const Button = (props) => {
     } else if (name === "Get My Resume") {
       window.open(resumePDF, "_blank");
     } else if (name === "Brief Scan") {
-      data.setModalConf({
-        ...data.modalConf,
+      setModalConf({
+        ...modalConf,
         visible: "",
         positionY: `${window.scrollY}`,
         projectId: projectId,
