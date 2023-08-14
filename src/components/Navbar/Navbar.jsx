@@ -1,6 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { useState, useEffect } from "react";
-import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
+import { Navbar, Collapse, Typography, IconButton } from "@material-tailwind/react";
 import logo from "@/assets/images/logo_barrenechea.png";
 
 const Nav = () => {
@@ -40,7 +40,12 @@ const Nav = () => {
   );
 
   return (
-    <Navbar shadow={false} blurred={false} fullWidth={true} className="p-1 lg:px-8 bg-dark-blue border-dark-blue z-50 px-7">
+    <Navbar
+      shadow={false}
+      blurred={false}
+      fullWidth={true}
+      className="h-[60px] p-1 lg:px-8 bg-dark-blue border-dark-blue z-50 px-7"
+    >
       <div className="flex items-center justify-between text-white ">
         <Typography as="a" href="#" className="mr-4 cursor-pointer py-1.5 font-medium">
           <img
