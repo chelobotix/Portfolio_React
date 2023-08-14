@@ -41,7 +41,6 @@ const Modal = (props) => {
       tabIndex={0}
       style={{ top: `${modalConf.positionY}px` }}
       onClick={handleModal}
-      onLoad={setFocus}
       onKeyDown={handleKeyDown}
     >
       <div onClick={(e) => e.stopPropagation()} className="flex flex-col items-center">
@@ -59,14 +58,45 @@ const Modal = (props) => {
         {!modalConf.resetCarousel ? (
           <div></div>
         ) : (
-          <div className="w-10/12 flex justify-center">
+          <div className="w-10/12 flex justify-center border-2 border-white">
             <ImageGallery items={projectImages} thumbnailClass={"w-10"} />
           </div>
         )}
+
+        <div className="flex flex-col items-center bg-dark-pink mt-5 w-10/12 lg:w-10/12  md:mb-3 opacity-95 rounded-md border-2 border-white ">
+          <div className="flex flex-col items-center">
+            <p className="text-ligth-pink text-lg font-semibold underline">Stack</p>
+            <ul className="flex">
+              {project.techs.map((tech) => (
+                <IconContext.Provider key={uuidv4()} value={project.techsStyle}>
+                  <li className="m-1" key={uuidv4()}>
+                    {tech}
+                  </li>
+                </IconContext.Provider>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <p className="text-ligth-pink text-lg underline font-semibold">Description</p>
+            <p className="text-sm text-center italic text-white mx-4">{project.description}</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <p className="text-ligth-pink text-lg underline font-semibold">Features</p>
+            <ul className="flex flex-col items-center mb-5">
+              {project.features.map((feature) => (
+                <li className="text-sm text-white list-disc" key={uuidv4()}>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <div className="flex gap-6 justify-center items-center">
           <div className="flex flex-col items-center mt-3 mb-2">
             <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
-              <a href={project.gitHub} target="_blank">
+              <a href={project.gitHub} target="_blank" rel="noreferrer">
                 <IconContext.Provider value={{ color: "white", size: "2rem", className: "github" }}>
                   <BsGithub />
                 </IconContext.Provider>
@@ -82,36 +112,6 @@ const Modal = (props) => {
             liveDemo={project.liveDemo}
             type={"button"}
           />
-        </div>
-        <div className="flex flex-col items-center bg-dark-pink w-11/12 max-w-[900px] lg:w-9/12  md:mb-3 opacity-95 rounded-md ">
-          <div className="flex flex-col items-center">
-            <p className="text-white text-xl font-semibold underline">Stack</p>
-            <ul className="flex">
-              {project.techs.map((tech) => (
-                <IconContext.Provider key={uuidv4()} value={project.techsStyle}>
-                  <li className="m-1" key={uuidv4()}>
-                    {tech}
-                  </li>
-                </IconContext.Provider>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <p className="text-white text-xl underline font-semibold">Description</p>
-            <p className="text-sm text-center italic text-white mx-4">{project.description}</p>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <p className="text-white text-xl underline font-semibold">Features</p>
-            <ul className="flex flex-col items-center mb-5">
-              {project.features.map((feature) => (
-                <li className="text-sm text-white list-disc" key={uuidv4()}>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
     </div>
