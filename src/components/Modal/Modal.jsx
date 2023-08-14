@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { IconContext } from "react-icons";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
@@ -14,15 +14,15 @@ const Modal = (props) => {
     setModalConf({ ...modalConf, visible: "hidden", scroll: "auto", resetCarousel: false });
   };
 
-  const setFocus = () => {
-    modalRef.current.focus();
-  };
-
   const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       setModalConf({ ...modalConf, visible: "hidden", scroll: "auto", resetCarousel: false });
     }
   };
+
+  useEffect(() => {
+    modalRef.current.focus();
+  }, [modalConf]);
 
   const project = modalConf.projects.find((project) => project.id === modalConf.projectId);
 
