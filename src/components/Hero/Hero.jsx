@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
-import { DiRuby, DiHtml5, DiReact, DiCss3 } from "react-icons/di";
 import Contact from "../Contact/Contact";
 import CallAction from "../CallAction/CallAction";
-import DownArrow from "../DownArrow/DownArrow";
 import bg_img from "@/assets/images/header_bg.jpg";
 import saturn from "@/assets/images/saturn.png";
 import comet from "@/assets/images/comet.png";
 import tesseract from "@/assets/images/Tesseract.gif";
-import frame from "@/assets/images/frame1.png";
 import style from "./Hero.module.css";
 import "@/assets/style/animateText.css";
 const Hero = () => {
@@ -31,6 +28,7 @@ const Hero = () => {
   return (
     <>
       <div
+        id="hero"
         className="flex flex-col items-center justify-center bg-cover bg-center w-screen h-screen"
         style={{ backgroundImage: `url(${bg_img})` }}
       >
@@ -46,7 +44,7 @@ const Hero = () => {
         <div className="flex flex-col items-center w-11/12 mt-20">
           <p className="animateText text-sm font-semibold italic pl-6 md:py-2">Welcome to my Portfolio</p>
           <h1 className="text-white font-bold  text-3xl md:text-4xl xl:text-5xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
-            I'm Marcelo
+            I&#39;m Marcelo
             <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">The Full Stack</p>
             <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Software Engineer</p>
           </h1>
