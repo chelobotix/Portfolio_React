@@ -63,12 +63,12 @@ const Modal = (props) => {
           </div>
         )}
 
-        <div className="flex flex-col items-center bg-dark-pink mt-5 w-10/12 lg:w-10/12  md:mb-3 opacity-95 rounded-md border-2 border-white ">
+        <div className="flex flex-col items-cente bg-white  mt-5 w-10/12 lg:w-10/12  md:mb-3 opacity-95 rounded-md ">
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg font-semibold underline">Stack</p>
+            <p className="text-dark-blue text-lg font-semibold underline">Stack</p>
             <ul className="flex">
               {project.techs.map((tech) => (
-                <IconContext.Provider key={uuidv4()} value={project.techsStyle}>
+                <IconContext.Provider key={uuidv4()} value={{ color: "#3a3153", size: "2rem" }}>
                   <li className="m-1" key={uuidv4()}>
                     {tech}
                   </li>
@@ -78,15 +78,15 @@ const Modal = (props) => {
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg underline font-semibold">Description</p>
-            <p className="text-sm text-center italic text-white mx-4">{project.description}</p>
+            <p className="text-dark-blue text-lg underline font-semibold">Description</p>
+            <p className="text-sm text-center italic text-dark-blue mx-4">{project.description}</p>
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg underline font-semibold">Features</p>
+            <p className="text-dark-blue text-lg underline font-semibold">Features</p>
             <ul className="flex flex-col items-center mb-5">
               {project.features.map((feature) => (
-                <li className="text-sm text-white list-disc" key={uuidv4()}>
+                <li className="text-sm text-dark-blue list-disc" key={uuidv4()}>
                   {feature}
                 </li>
               ))}
@@ -101,7 +101,7 @@ const Modal = (props) => {
                   </IconContext.Provider>
                 </a>
               </div>
-              <p className="text-xs text-white">GitHub</p>
+              <p className="text-sm text-dark-blue">GitHub</p>
             </div>
             <Button
               name="Live Demo"
