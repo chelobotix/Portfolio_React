@@ -36,7 +36,7 @@ const Modal = (props) => {
 
   return (
     <div
-      className={`${modalConf.visible} flex items-start justify-center w-screen h-screen overflow-y-auto backdrop-blur-sm bg-black/50 absolute z-30 p-1`}
+      className={`${modalConf.visible} flex items-start justify-center w-screen h-screen overflow-y-auto backdrop-blur-sm bg-black/80 absolute z-30 p-1`}
       ref={modalRef}
       tabIndex={0}
       style={{ top: `${modalConf.positionY}px` }}
@@ -52,23 +52,23 @@ const Modal = (props) => {
             <AiFillCloseCircle />
           </IconContext.Provider>
         </p>
-        <h3 className="w-11/12  w-max-11/12 lg:w-3/5 xl:w-1/2 text-center text-2xl font-bold text-dark-blue bg-white px-6 mb-2 rounded-md">
+        <h3 className="w-11/12  w-max-11/12 lg:w-3/5 xl:w-1/2 text-center text-4xl md:text-5xl font-bold text-white px-6 mb-2 rounded-md">
           {project.title}
         </h3>
         {!modalConf.resetCarousel ? (
           <div></div>
         ) : (
-          <div className="w-10/12 flex justify-center border-2 border-white">
+          <div className="w-10/12 flex justify-center ">
             <ImageGallery items={projectImages} thumbnailClass={"w-10"} />
           </div>
         )}
 
-        <div className="flex flex-col items-center bg-dark-pink mt-5 w-10/12 lg:w-10/12  md:mb-3 opacity-95 rounded-md border-2 border-white ">
+        <div className="flex flex-col items-cente bg-white  mt-5 w-10/12 lg:w-10/12  md:mb-3 opacity-95 rounded-md ">
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg font-semibold underline">Stack</p>
+            <p className="text-dark-blue text-lg font-semibold underline">Stack</p>
             <ul className="flex">
               {project.techs.map((tech) => (
-                <IconContext.Provider key={uuidv4()} value={project.techsStyle}>
+                <IconContext.Provider key={uuidv4()} value={{ color: "#3a3153", size: "2rem" }}>
                   <li className="m-1" key={uuidv4()}>
                     {tech}
                   </li>
@@ -78,40 +78,40 @@ const Modal = (props) => {
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg underline font-semibold">Description</p>
-            <p className="text-sm text-center italic text-white mx-4">{project.description}</p>
+            <p className="text-dark-blue text-lg underline font-semibold">Description</p>
+            <p className="text-sm text-center italic text-dark-blue mx-4">{project.description}</p>
           </div>
 
           <div className="flex flex-col items-center">
-            <p className="text-ligth-pink text-lg underline font-semibold">Features</p>
+            <p className="text-dark-blue text-lg underline font-semibold">Features</p>
             <ul className="flex flex-col items-center mb-5">
               {project.features.map((feature) => (
-                <li className="text-sm text-white list-disc" key={uuidv4()}>
+                <li className="text-sm text-dark-blue list-disc" key={uuidv4()}>
                   {feature}
                 </li>
               ))}
             </ul>
           </div>
-        </div>
-        <div className="flex gap-6 justify-center items-center">
-          <div className="flex flex-col items-center mt-3 mb-2">
-            <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
-              <a href={project.gitHub} target="_blank" rel="noreferrer">
-                <IconContext.Provider value={{ color: "white", size: "2rem", className: "github" }}>
-                  <BsGithub />
-                </IconContext.Provider>
-              </a>
+          <div className="flex flex-col gap-2 mb-3 lg:flex-row lg:gap-6 justify-center items-center">
+            <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center text-sm font-semibold border-2 border-white bg-black rounded-3xl hover:bg-white hover:border-white hover:text-white duration-1000">
+                <a href={project.gitHub} target="_blank" rel="noreferrer">
+                  <IconContext.Provider value={{ color: "white", size: "2rem", className: "github" }}>
+                    <BsGithub />
+                  </IconContext.Provider>
+                </a>
+              </div>
+              <p className="text-sm text-dark-blue">GitHub</p>
             </div>
-            <p className="text-xs text-white">GitHub</p>
+            <Button
+              name="Live Demo"
+              style={
+                "px-4 py-1 text-sm font-semibold border-2 border-dark-blue bg-white rounded-3xl text-dark-blue hover:border-dark-pink hover:scale-110 ring-white ring-1 duration-200 lg:px-8 lg:py-2 lg:text-base"
+              }
+              liveDemo={project.liveDemo}
+              type={"button"}
+            />
           </div>
-          <Button
-            name="Live Demo"
-            style={
-              "px-4 py-1 text-sm font-semibold border-2 border-dark-blue bg-white rounded-3xl text-dark-blue hover:border-dark-pink hover:scale-110 ring-white ring-1 duration-200"
-            }
-            liveDemo={project.liveDemo}
-            type={"button"}
-          />
         </div>
       </div>
     </div>
