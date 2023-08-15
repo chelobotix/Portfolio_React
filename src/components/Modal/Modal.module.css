@@ -1,0 +1,7 @@
+.modalClose {
+  display: none;
+}
+
+.modalOpen {
+  display: flex;
+}

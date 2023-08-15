@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import resume from "@/assets/files/AlarconResumeReact.docx";
 import ContextModal from "../context/ContextModal";
 
 const Button = (props) => {
@@ -11,7 +10,7 @@ const Button = (props) => {
     if (name === "Live Demo") {
       window.open(liveDemo, "_blank");
     } else if (name === "Get My Resume") {
-      window.open(resume, "_blank");
+      window.open("/files/AlarconResumeReact.docx", "_blank");
     } else if (name === "Brief Scan") {
       setModalConf({
         ...modalConf,
