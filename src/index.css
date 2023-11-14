@@ -1,15 +1,18 @@
-@import "node_modules/react-image-gallery/styles/css/image-gallery.css";
+@import 'node_modules/react-image-gallery/styles/css/image-gallery.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: Monument-regular;
-  src: url("../assets/fonts/Monument-Regular.ttf") format("truetype");
+  src: url('../assets/fonts/Monument-Regular.ttf') format('truetype');
 }
 
 .articleProject {
-  @apply bg-gradient-to-t from-dark-purple to-dark-pink flex flex-col items-center justify-between rounded-2xl border border-letter-blue hover:ring-2 ring-white hover:scale-[1.01] duration-100;
+  @apply bg-indigo-700 bg-opacity-80 flex flex-col items-center justify-between hover:ring-2 hover:scale-[1.01] duration-200;
+  box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.75);
 }
 
 .github:hover {

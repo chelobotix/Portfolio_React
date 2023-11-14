@@ -1,29 +1,11 @@
-.icon {
-  position: absolute;
-  left: -169px;
-  top: -30px;
-}
-
-.projectArticle {
-  width: 405px;
-}
-
 @media only screen and (max-width: 640px) {
   .projectArticle {
     width: 305px;
-    height: 550px;
   }
 }
 
 @media only screen and (min-width: 641px) {
   .projectArticle {
     width: 350px;
-    height: 550px;
-  }
-
-  .icon {
-    position: absolute;
-    left: -192px;
-    top: -30px;
   }
 }
