@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import Contact from "../Contact/Contact";
-import CallAction from "../CallAction/CallAction";
-import bg_img from "@/assets/images/header_bg.jpg";
-import saturn from "@/assets/images/saturn.png";
-import comet from "@/assets/images/comet.png";
-import tesseract from "@/assets/images/Tesseract.gif";
-import style from "./Hero.module.css";
-import "@/assets/style/animateText.css";
+import { motion } from 'framer-motion';
+import Contact from '../Contact/Contact';
+import CallAction from '../CallAction/CallAction';
+import bg_img from '@/assets/images/header_bg.jpg';
+import saturn from '@/assets/images/saturn.png';
+import comet from '@/assets/images/comet.png';
+import tesseract from '@/assets/images/Tesseract.gif';
+import style from './Hero.module.css';
+import '@/assets/style/animateText.css';
 const Hero = () => {
   let cometAnimationDuration = {};
   let cometCoordiante = { from: {}, to: {} };
@@ -15,12 +15,12 @@ const Hero = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth < 769) {
       cometAnimationDuration = { duration: 20, repeat: Infinity, repeatDelay: 10 };
-      cometCoordiante.from = { x: "100vw", y: -150 };
-      cometCoordiante.to = { x: "-100vw", y: -350 };
+      cometCoordiante.from = { x: '100vw', y: -150 };
+      cometCoordiante.to = { x: '-100vw', y: -350 };
     } else {
       cometAnimationDuration = { duration: 30, repeat: Infinity, repeatDelay: 10 };
-      cometCoordiante.from = { x: "100vw", y: 0 };
-      cometCoordiante.to = { x: "-100vw", y: -380 };
+      cometCoordiante.from = { x: '100vw', y: 0 };
+      cometCoordiante.to = { x: '-100vw', y: -380 };
     }
   };
   animateComet();
@@ -45,18 +45,16 @@ const Hero = () => {
           <p className="animateText text-sm font-semibold italic pl-6 md:py-2">Welcome to my Portfolio</p>
           <h1 className="text-white font-bold  text-3xl md:text-4xl xl:text-5xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
             I&#39;m Marcelo
-            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">The Full Stack</p>
-            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Software Engineer</p>
+            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Full Stack</p>
+            <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Software Developer</p>
           </h1>
 
           <div className="w-full flex justify-center">
             <div className={`opacity-[0.85] flex justify-center ${style.frame}`}>
               <div className="w-9/12">
-                <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider text-center">
-                  A lifelong passion for PCs fuels me.
-                </p>
+                <p className="text-dark-pink px-1 italic text-sm mb-2 tracking-wider text-center">A lifelong passion for PCs fuels me.</p>
                 <p className="text-dark-pink pl-1 italic text-sm mb-2 tracking-wider leading-5 text-center">
-                  Ready to develop and maintain efficient, clean code applications with{" "}
+                  Ready to develop and maintain efficient, clean code applications with{' '}
                   <span className="underline">Javascript, React, and Ruby on Rails.</span>
                 </p>
                 <p className="text-dark-pink pl-1 italic text-sm mb-1 tracking-wider text-center">
