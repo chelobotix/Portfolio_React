@@ -4,34 +4,36 @@ import { IconContext } from 'react-icons';
 import { v4 as uuidv4 } from 'uuid';
 import Button from '../Button/Button';
 import style from './Project.module.css';
-import Chip from '@mui/material/Chip';
+import LaunchIcon from '@mui/icons-material/Launch';
+import { Button as MButton } from '@mui/material';
 
 const Project = (props) => {
   const { id, title, images, icons, liveDemo, gitHub } = props.details;
   const handleClick = (url) => {
-    window.open(url, '_self');
+    window.open(url, '_blank');
   };
   return (
     <article className={`articleProject shadowProject border-[1px] border-white rounded-lg ${style.projectArticle} `}>
       <img className="h-[250px] w-[300px] mt-4 rounded-lg" src={images[0]} alt="project_image" />
 
-      <div className="flex flex-col gap-2 items-center w-full justify-center h-[100px]">
-        <h3 className="text-3xl font-semibold text-white text-center">{title}</h3>
-        <ul className="flex gap-2">
-          {gitHub.map((url, index) => (
-            <li key={uuidv4()}>
-              <Chip
-                icon={<GitHubIcon style={{ color: '#ffffff' }} />}
-                style={{ color: '#ffffff', padding: '0 10px' }}
-                variant="outlined"
-                size="small"
-                label={index === 0 ? 'Front-end' : 'Back-end'}
-                onClick={() => handleClick(url)}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <h3 className="text-3xl font-semibold text-white text-center py-4">{title}</h3>
+
+      <ul className="flex gap-2">
+        {gitHub.map((url, index) => (
+          <li key={uuidv4()}>
+            <MButton
+              startIcon={<GitHubIcon style={{ color: '#ffffff' }} />}
+              endIcon={<LaunchIcon style={{ color: '#ffffff' }} />}
+              style={{ color: '#ffffff', padding: '0 10px', textTransform: 'none' }}
+              variant="outlined"
+              size="small"
+              onClick={() => handleClick(url)}
+            >
+              {index === 0 ? 'Front-end' : 'Back-end'}
+            </MButton>
+          </li>
+        ))}
+      </ul>
 
       <div className="flex justify-center items-center gap-3 w-full h-[80px]  ">
         {icons.map((icon) => {
@@ -45,7 +47,7 @@ const Project = (props) => {
         })}
       </div>
 
-      <div className="flex items-center gap-2 mb-5">
+      <div className="flex items-center gap-2 my-8">
         <Button
           name="Fast Inspection"
           style={

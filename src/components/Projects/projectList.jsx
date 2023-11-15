@@ -39,17 +39,17 @@ import { v4 as uuidv4 } from 'uuid';
 const projectList = [
   {
     id: 1,
-    title: 'Huyguens Luxory Watches',
+    title: 'Huyguens Watches',
     images: [huyguens1, huyguens2, huyguens3, huyguens4],
     description:
       "I've invested all my effort in creating scalable and reusable React components with TypeScript. The codebase is a testament to cleanliness, incorporating design patterns like custom hooks to ensure efficiency and maintainability.",
     techs: [<FaReact key={uuidv4()} />, <SiRedux key={uuidv4()} />, <SiRubyonrails key={uuidv4()} />, <IoLogoJavascript key={uuidv4()} />],
     techsStyle: { color: 'white', size: '1.5rem' },
     icons: [
-      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#C6322C' },
-      { icon: <FaReact key={uuidv4()} />, style: { color: '61DBFB', size: '3rem' }, bg: '#212121' },
-      { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
-      { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '3rem' }, bg: '#ffffff' },
+      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'ffffff', size: '2.5rem' }, bg: '#C6322C' },
+      { icon: <FaReact key={uuidv4()} />, style: { color: '61DBFB', size: '2.5rem' }, bg: '#212121' },
+      { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '2.5rem' }, bg: '#efefef' },
+      { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '2.5rem' }, bg: '#ffffff' },
     ],
     liveDemo: 'https://huygenswatches.netlify.app/',
     gitHub: ['https://github.com/chelobotix/Huygens_Luxury_Watches_Store', 'https://github.com/chelobotix/Huygens_Luxury_Watches_Store_Backend'],
