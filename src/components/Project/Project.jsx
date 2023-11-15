@@ -7,18 +7,19 @@ import style from './Project.module.css';
 
 const Project = (props) => {
   const { id, title, images, icons, liveDemo, gitHub } = props.details;
-
   return (
-    <article className={`articleProject border-[1px] border-white rounded-lg ${style.projectArticle} `}>
+    <article className={`articleProject shadowProject border-[1px] border-white rounded-lg ${style.projectArticle} `}>
       <img className="h-[250px] w-[300px] mt-4 rounded-lg" src={images[0]} alt="project_image" />
       <div className="flex items-center w-full justify-center h-[100px]">
         <h3 className="text-3xl font-semibold text-white text-center">{title}</h3>
       </div>
-      <div className="flex justify-center gap-3 w-full h-[80px] ">
+      <div className="flex justify-center items-center gap-3 w-full h-[80px]  ">
         {icons.map((icon) => {
           return (
             <IconContext.Provider key={uuidv4()} value={icon.style}>
-              {icon.icon}
+              <div className={`rounded-lg p-1 border-[1px] border-white shadowProject`} style={{ backgroundColor: icon.bg }}>
+                {icon.icon}
+              </div>
             </IconContext.Provider>
           );
         })}

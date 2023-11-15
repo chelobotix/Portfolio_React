@@ -20,11 +20,11 @@ const Projects = () => {
     <ContextModal.Provider value={{ modalConf, setModalConf }}>
       <section
         id="projects"
-        className="flex flex-col items-center bg-center bg-cover	bg-no-repeat object-contain"
+        className="flex flex-col items-center gap-7 py-7 bg-center bg-cover	bg-no-repeat object-contain"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <Modal modalConf={modalConf} setModalConf={setModalConf} />
-        <h2 className="text-white text-4xl font-bold mt-2 mb-6 md:mb-10 lg:text-5xl">Projects</h2>
+        <h2 className="text-white text-4xl font-bold  lg:text-5xl">Projects</h2>
         <div className="flex justify-center flex-wrap gap-9">
           {projectList.map((project) => {
             return <Project key={uuidv4()} title details={project} setModalConf={setModalConf} />;

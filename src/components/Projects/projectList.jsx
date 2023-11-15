@@ -32,6 +32,7 @@ import venomPrecision4 from '@/assets/images/venom_precision4-min.jpg';
 import { FaCss3Alt, FaHtml5, FaReact } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import { SiRedux, SiRubyonrails, SiWebpack } from 'react-icons/si';
+import { BiLogoPostgresql } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -45,8 +46,10 @@ const projectList = [
     techs: [<FaReact key={uuidv4()} />, <SiRedux key={uuidv4()} />, <SiRubyonrails key={uuidv4()} />, <IoLogoJavascript key={uuidv4()} />],
     techsStyle: { color: 'white', size: '1.5rem' },
     icons: [
-      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'C6322C', size: '4rem' } },
-      { icon: <FaReact key={uuidv4()} />, style: { color: '61DBFB', size: '3rem' } },
+      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#C6322C' },
+      { icon: <FaReact key={uuidv4()} />, style: { color: '61DBFB', size: '3rem' }, bg: '#212121' },
+      { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
+      { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '3rem' }, bg: '#ffffff' },
     ],
     liveDemo: 'https://huygenswatches.netlify.app/',
     gitHub: 'https://github.com/chelobotix/Huygens_Luxury_Watches_Store',
@@ -60,8 +63,10 @@ const projectList = [
     techs: [<FaReact key={uuidv4()} />, <SiRedux key={uuidv4()} />, <SiRubyonrails key={uuidv4()} />, <IoLogoJavascript key={uuidv4()} />],
     techsStyle: { color: 'white', size: '1.5rem' },
     icons: [
-      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'C6322C', size: '4rem' } },
-      { icon: <FaReact key={uuidv4()} />, style: { color: 'C6322C', size: '4rem' } },
+      { icon: <SiRubyonrails key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#C6322C' },
+      { icon: <FaReact key={uuidv4()} />, style: { color: '61DBFB', size: '3rem' }, bg: '#212121' },
+      { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
+      { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '3rem' }, bg: '#ffffff' },
     ],
     liveDemo: 'https://velvety-genie-9ab88d.netlify.app/',
     gitHub: 'https://github.com/chelobotix/VenomPrecision-back-end',
