@@ -52,7 +52,7 @@ const projectList = [
       { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '3rem' }, bg: '#ffffff' },
     ],
     liveDemo: 'https://huygenswatches.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/Huygens_Luxury_Watches_Store',
+    gitHub: ['https://github.com/chelobotix/Huygens_Luxury_Watches_Store', 'https://github.com/chelobotix/Huygens_Luxury_Watches_Store_Backend'],
     features: ['Front-end with React', 'Redux Toolkit', 'Back-end with Ruby on Rails', 'PostgreSQL Database'],
   },
   {
@@ -69,7 +69,7 @@ const projectList = [
       { icon: <BiLogoPostgresql key={uuidv4()} />, style: { color: '336791', size: '3rem' }, bg: '#ffffff' },
     ],
     liveDemo: 'https://velvety-genie-9ab88d.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/VenomPrecision-back-end',
+    gitHub: ['https://github.com/chelobotix/VenomPrecision-back-end'],
     features: ['Front-end with React', 'Redux Toolkit', 'Back-end with Ruby on Rails', 'PostgreSQL Database'],
   },
   {
@@ -86,7 +86,7 @@ const projectList = [
       { icon: <TbApi key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#EC6524' },
     ],
     liveDemo: 'https://thunderous-dasik-81b884.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/Retro-Watchers-Capstone',
+    gitHub: ['https://github.com/chelobotix/Retro-Watchers-Capstone'],
     features: ['Webpack', 'Callbacks and Promises', 'Send and receive data from an API', 'JavaScript code asynchronous'],
   },
   {
@@ -101,7 +101,7 @@ const projectList = [
       { icon: <FaCss3Alt key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#1C6FB5' },
     ],
     liveDemo: 'https://chelobotix.github.io/Capstone-project-Protoje-concert/',
-    gitHub: 'https://github.com/chelobotix/Capstone-project-Protoje-concert',
+    gitHub: ['https://github.com/chelobotix/Capstone-project-Protoje-concert'],
     features: ['Hamburger menu', 'Featured Performers section', 'Load more button', 'Social media menu'],
   },
   {
@@ -124,7 +124,7 @@ const projectList = [
       { icon: <TbApi key={uuidv4()} />, style: { color: 'ffffff', size: '3rem' }, bg: '#EC6524' },
     ],
     liveDemo: 'https://whimsical-peony-71ff5a.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/Leaderboard-Chelobotix',
+    gitHub: ['https://github.com/chelobotix/Leaderboard-Chelobotix'],
     features: ['LeaderBoard Table', 'Add Score Form', 'Send and receive data from an API'],
   },
   {
@@ -139,7 +139,7 @@ const projectList = [
       { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
     ],
     liveDemo: 'https://friendly-axolotl-ffabbd.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/Space-Travelers-Hub',
+    gitHub: ['https://github.com/chelobotix/Space-Travelers-Hub'],
     features: ['Space-X Rockets, Missions and Profile', 'API connection', 'React Route', 'Redux'],
   },
   {
@@ -156,7 +156,7 @@ const projectList = [
       { icon: <IoLogoJavascript key={uuidv4()} />, style: { color: '000000', size: '3rem' }, bg: '#F7DF1E' },
     ],
     liveDemo: 'https://chelobotix.github.io/Awesome_Book/',
-    gitHub: 'https://github.com/chelobotix/Awesome_Book',
+    gitHub: ['https://github.com/chelobotix/Awesome_Book'],
     features: ['Single Page Application (SPA)', 'JavaScript - Modules ', 'Display list of books', 'Localstorage management'],
   },
   {
@@ -173,7 +173,7 @@ const projectList = [
       { icon: <IoLogoJavascript key={uuidv4()} />, style: { color: '000000', size: '3rem' }, bg: '#F7DF1E' },
     ],
     liveDemo: 'https://chelobotix.github.io/To-Do-List-Barrenechea/dist/',
-    gitHub: 'https://github.com/chelobotix/To-Do-List-Barrenechea',
+    gitHub: ['https://github.com/chelobotix/To-Do-List-Barrenechea'],
     features: ['Webpack', 'CRUD Task', 'Remove Multiple Tasks', 'Localstorage management'],
   },
 
@@ -189,7 +189,7 @@ const projectList = [
       { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
     ],
     liveDemo: 'https://fascinating-cat-ad9483.netlify.app',
-    gitHub: 'https://github.com/chelobotix/Book-Store-Chelobotix',
+    gitHub: ['https://github.com/chelobotix/Book-Store-Chelobotix'],
     features: ['Redux Toolkit', 'API connection', 'Css module Style'],
   },
   {
@@ -204,7 +204,7 @@ const projectList = [
       { icon: <SiRedux key={uuidv4()} />, style: { color: '764abc', size: '3rem' }, bg: '#efefef' },
     ],
     liveDemo: 'https://friendly-axolotl-ffabbd.netlify.app/',
-    gitHub: 'https://github.com/chelobotix/Space-Travelers-Hub',
+    gitHub: ['https://github.com/chelobotix/Space-Travelers-Hub'],
     features: ['Space-X Rockets, Missions and Profile', 'API connection', 'React Route', 'Redux'],
   },
 
