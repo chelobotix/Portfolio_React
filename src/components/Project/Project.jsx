@@ -47,11 +47,11 @@ const Project = (props) => {
         })}
       </div>
 
-      <div className="flex items-center gap-2 my-8">
+      <div className="w-full flex justify-center gap-4 my-8">
         <Button
           name="Fast Inspection"
           style={
-            'px-3 py-1 text-sm font-semibold border-2 border-white rounded-3xl text-white hover:bg-white hover:border-dark-blue hover:text-dark-blue duration-700'
+            'w-36 px-3 py-1 text-sm font-semibold border-2 border-white rounded-3xl text-white hover:bg-white hover:border-dark-blue hover:text-dark-blue duration-700'
           }
           projectId={id}
           type={'button'}
@@ -59,7 +59,7 @@ const Project = (props) => {
         <Button
           name="Live Demo"
           style={
-            'px-3 py-1 text-sm font-semibold border-2 border-letter-blue bg-white rounded-3xl text-dark-blue hover:border-white hover:bg-transparent hover:text-white duration-700'
+            'w-36 px-3 py-1 text-sm font-semibold border-2 border-letter-blue bg-white rounded-3xl text-dark-blue hover:border-white hover:bg-transparent hover:text-white duration-700'
           }
           liveDemo={liveDemo}
           projectId={id}

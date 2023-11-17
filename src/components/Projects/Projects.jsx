@@ -25,7 +25,7 @@ const Projects = () => {
       >
         <Modal modalConf={modalConf} setModalConf={setModalConf} />
         <h2 className="text-white text-4xl font-bold  lg:text-5xl">Projects</h2>
-        <div className="flex justify-center flex-wrap gap-9">
+        <div className="flex justify-center gap-5 flex-wrap">
           {projectList.map((project) => {
             return <Project key={uuidv4()} title details={project} setModalConf={setModalConf} />;
           })}
