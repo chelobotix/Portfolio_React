@@ -64,6 +64,7 @@ const projectList = [
       'Tailwind',
       'React Router Dom',
       'Styled Components',
+      'Mui Material <UI></UI>',
     ],
   },
   {
