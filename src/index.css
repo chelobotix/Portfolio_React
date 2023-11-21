@@ -34,3 +34,14 @@ html {
 .github:hover {
   fill: #000;
 }
+
+.about {
+  /* flex flex-col gap-3 items-center w-screen p-7 bg-center bg-cover	bg-no-repeat object-contain backdrop-filter backdrop-blur-3xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/src/assets/images/aboutbg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
