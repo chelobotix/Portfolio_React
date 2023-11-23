@@ -5,9 +5,9 @@ import { Motion } from './Motion';
 
 const TechAccordion = () => {
   return (
-    <article className="flex flex-col gap-3 bg-dark-blue bg-opacity-50 rounded-lg p-3 ">
+    <article className="flex flex-col gap-5 bg-dark-blue bg-opacity-50 rounded-lg p-3 ">
       <div className="flex flex-col items-center gap-3">
-        <h3 className="text-white font-light text-lg underline">Languages</h3>
+        <h3 className="text-white tracking-wider text-lg underline">Languages</h3>
         <Motion>
           <ul className="flex justify-center gap-5">
             {techList.languages.map((tech) => {
@@ -29,7 +29,7 @@ const TechAccordion = () => {
       <hr className="h-[1px] w-full bg-white border-0 my-4" />
 
       <div className="flex flex-col items-center gap-3">
-        <h3 className="text-white font-light text-lg underline">Frameworks & Libraries</h3>
+        <h3 className="text-white tracking-wider text-lg underline">Frameworks & Libraries</h3>
         <Motion>
           <ul className="flex justify-center flex-wrap gap-5">
             {techList.frameworks.map((tech) => {
@@ -51,7 +51,7 @@ const TechAccordion = () => {
       <hr className="h-[1px] w-full bg-white border-0 my-4" />
 
       <div className="flex flex-col items-center gap-3">
-        <h3 className="text-white font-light text-lg underline">Skills</h3>
+        <h3 className="text-white tracking-wider text-lg underline">Skills</h3>
         <Motion>
           <ul className="flex justify-center flex-wrap gap-5">
             {techList.skills.map((tech) => {
