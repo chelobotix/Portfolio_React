@@ -1,6 +1,38 @@
 import Button from '../Button/Button';
 import TextField from '@mui/material/TextField';
-import { createTheme } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { outlinedInputClasses } from '@mui/material/OutlinedInput';
+import { inputLabelClasses } from '@mui/material/InputLabel';
+
+const StyledTextField = styled(TextField)({
+  [`& .${outlinedInputClasses.root} .${outlinedInputClasses.notchedOutline}`]: {
+    borderColor: 'white',
+  },
+  [`&:hover .${outlinedInputClasses.root} .${outlinedInputClasses.notchedOutline}`]: {
+    borderColor: 'white',
+  },
+  [`& .${outlinedInputClasses.root}.${outlinedInputClasses.focused} .${outlinedInputClasses.notchedOutline}`]: {
+    borderColor: 'white',
+  },
+  [`& .${outlinedInputClasses.input}`]: {
+    color: 'white',
+  },
+  [`&:hover .${outlinedInputClasses.input}`]: {
+    color: 'white',
+  },
+  [`& .${outlinedInputClasses.root}.${outlinedInputClasses.focused} .${outlinedInputClasses.input}`]: {
+    color: 'white',
+  },
+  [`& .${inputLabelClasses.outlined}`]: {
+    color: 'white',
+  },
+  [`&:hover .${inputLabelClasses.outlined}`]: {
+    color: 'white',
+  },
+  [`& .${inputLabelClasses.outlined}.${inputLabelClasses.focused}`]: {
+    color: 'white',
+  },
+});
 
 const ContactForm = () => {
   return (
@@ -8,24 +40,9 @@ const ContactForm = () => {
       <h2 className="animateText text-4xl font-bold mt-12 mb-1 lg:text-5xl">Contact me</h2>
       <p className="text-xs text-white mb-4">If you like Tesseract like I do, let&apos;s talk...</p>
       <form className="w-[320px] md:w-1/2 flex flex-col gap-3 p-2 item-center" action="https://formspree.io/f/xzbwnlee" method="post">
-        <TextField
-          id="outlined-basic"
-          label="Name"
-          InputLabelProps={{
-            style: {
-              color: '#ffffff',
-              fontWeight: 'lighter',
-            },
-          }}
-          inputProps={{ borderColor: 'white' }}
-          variant="outlined"
-          inputName={'name'}
-          type="text"
-          required
-          sx={{ input: { color: '#ffffff' } }}
-        />
-        <TextField id="outlined-basic" label="Email" variant="outlined" inputName={'email'} type="email" required />
-        <TextField id="outlined-basic" label="Comments" variant="outlined" inputName={'comment'} multiline rows={4} required />
+        <StyledTextField id="outlined-basic" label="Name" variant="outlined" inputName={'name'} type="text" required />
+        <StyledTextField id="outlined-basic" label="Email" variant="outlined" inputName={'email'} type="email" required />
+        <StyledTextField id="outlined-basic" label="Comments" variant="outlined" inputName={'comment'} multiline rows={4} required />
         {/* <InputComponent label={'Email'} type={'email'} inputName={'email'} /> */}
         {/* <TextArea inputName={'comment'} /> */}
         <Button
