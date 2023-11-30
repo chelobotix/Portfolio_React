@@ -5,7 +5,7 @@ const Button = (props) => {
   const { name, style, liveDemo, projectId, type } = props;
 
   const { modalConf, setModalConf } = useContext(ContextModal);
-
+//! cambiar fuente del boton call to action
   const buttonType = () => {
     if (name === 'Live Demo') {
       window.open(liveDemo, '_blank');

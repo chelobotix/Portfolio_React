@@ -5,7 +5,11 @@
 
 @font-face {
   font-family: Monument-regular;
-  src: url('../assets/fonts/Monument-Regular.ttf') format('truetype');
+  src: local('MonaspaceKrypton-regular'), url('../assets/fonts/Monument-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'MonaspaceKrypton-regular';
 }
 
 * {

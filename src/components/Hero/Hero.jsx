@@ -42,8 +42,7 @@ const Hero = () => {
           <img src={comet} alt="" />
         </motion.div>
         <div className="flex flex-col items-center w-11/12 mt-20">
-          <p className="animateText text-sm font-semibold italic pl-6 md:py-2">Welcome to my Portfolio</p>
-          <h1 className="text-white font-bold  text-3xl md:text-4xl xl:text-5xl drop-shadow-md font-monument text-center leading-9 tracking-wider pl-6">
+          <h1 className="text-white   text-3xl md:text-4xl xl:text-5xl drop-shadow-md text-center leading-9 tracking-wider pl-6">
             I&#39;m Marcelo
             <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Full Stack</p>
             <p className=" md:tracking-normal text-2xl md:text-3xl xl:text-4xl">Software Developer</p>

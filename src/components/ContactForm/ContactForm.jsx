@@ -40,9 +40,9 @@ const ContactForm = () => {
       <h2 className="animateText text-4xl font-bold mt-12 mb-1 lg:text-5xl">Contact me</h2>
       <p className="text-xs text-white mb-4">If you like Tesseract like I do, let&apos;s talk...</p>
       <form className="w-[320px] md:w-1/2 flex flex-col gap-3 p-2 item-center" action="https://formspree.io/f/xzbwnlee" method="post">
-        <StyledTextField id="outlined-basic" label="Name" variant="outlined" inputName={'name'} type="text" required />
-        <StyledTextField id="outlined-basic" label="Email" variant="outlined" inputName={'email'} type="email" required />
-        <StyledTextField id="outlined-basic" label="Comments" variant="outlined" inputName={'comment'} multiline rows={4} required />
+        <StyledTextField id="outlined-basic" label="Name" variant="outlined" name={'name'} type="text" required />
+        <StyledTextField id="outlined-basic" label="Email" variant="outlined" name={'email'} type="email" required />
+        <StyledTextField id="outlined-basic" label="Comments" variant="outlined" name={'comment'} multiline rows={4} required />
         {/* <InputComponent label={'Email'} type={'email'} inputName={'email'} /> */}
         {/* <TextArea inputName={'comment'} /> */}
         <Button
